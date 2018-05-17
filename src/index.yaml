@@ -3,3 +3,5 @@ ProjectTitle: cyrcle
 PageList:
 - file: page.html
   ready: 50
+- file: frequency.html
+  ready: 50
