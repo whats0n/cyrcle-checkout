@@ -5,3 +5,5 @@ PageList:
   ready: 50
 - file: frequency.html
   ready: 50
+- file: checkout.html
+  ready: 50

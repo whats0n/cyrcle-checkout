@@ -10,10 +10,26 @@
 	font-size: 15px
 	color: $bluey-grey
 	&__left-col
-		text-align: left
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		span
+			margin-bottom: 17px
 	&__right-col
-		font-weight: 600;
-		text-align: right;
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		font-weight: 600
+		span
+			margin-bottom: 17px
 
 .price
 	&__left-col_mod

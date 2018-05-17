@@ -1,0 +1,49 @@
+---
+title: checkout
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<!-- begin main -->
+<div class="main">
+	<div class="inner">
+		{% include 'partials/components/_steps.html' %}
+	</div>
+</div>
+<!-- end main -->
+
+<!--aside begin -->
+<aside class="aside">
+	<div class="aside__container">
+		<div class="aside__wrapper">
+			<span class="aside__label label aside__label_mod">Pickup Type</span>
+			{% include "partials/components/_pickup-type.html" %}
+			<span class="aside__label label">Service Address</span>
+			{% include "partials/components/_service-address.html" %}
+			<div class="aside__wrap">
+				<div class="aside__row text">
+					<div class="text__left-col">
+						<span>Frequency</span>
+						<span>Bin Option</span>
+					</div>
+					<div class="text__right-col">
+						<span>Bi-Weekly</span>
+						<span>Bin + Rollcart</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="aside__footer price">
+			<div class="price__left">
+				<span>Monthly Fee</span>
+			</div>
+			<div class="price__right">
+				<span>$35/mo</span>
+			</div>
+		</div>
+	</div>
+</aside>
+<!--aside end -->
+
+{% endblock %}
