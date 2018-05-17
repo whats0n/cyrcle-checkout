@@ -1,0 +1,28 @@
+body
+	background: #FFF
+	+css-lock(16, 50, 600, 1000)
+	line-height: 1.4
+
+.out
+	display: flex
+	+md
+		flex-direction: column
+.main,
+.aside
+	overflow: auto
+	height: 100vh
+	+md
+		height: auto
+.main
+	flex-grow: 1
+	padding: 80px 0 40px
+	+gb($twilight, $dark-grey-blue)
+	+md
+		padding: 40px 0
+.inner
+	position: relative
+	padding-left: 20px
+	padding-right: 20px
+	margin-left: auto
+	margin-right: auto
+	max-width: 845px
