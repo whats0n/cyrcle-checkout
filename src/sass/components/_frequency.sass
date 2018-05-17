@@ -1,10 +1,30 @@
 .text
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: space-between
 	line-height: 1.71
 	font-size: 15px
 	color: $bluey-grey
-	&__left-column
+	&__left-col
 		text-align: left
-	&__right-column
+	&__right-col
 		font-weight: 600;
 		text-align: right;
+
+.price
+	&__left-col_mod
+		font-size: 17px
+		line-height: 1.5
+		color: $dark-grey-blue-two
+		text-align: left
+	&__right-col_mod
+		font-size: 17px
+		line-height: 1.5
+		font-weight: 600
+		text-align: right
+		color: $dark-grey-blue-two
 
