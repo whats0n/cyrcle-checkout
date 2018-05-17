@@ -17,22 +17,27 @@ title: checkout
 <aside class="aside">
 	<div class="aside__container">
 		<div class="aside__wrapper">
-			<span class="aside__label label aside__label_mod">Pickup Type</span>
-			{% include "partials/components/_pickup-type.html" %}
-			<span class="aside__label label">Service Address</span>
-			{% include "partials/components/_service-address.html" %}
-			<div class="aside__wrap">
-				<div class="aside__row text">
-					<div class="text__left-col">
-						<span>Frequency</span>
-						<span>Bin Option</span>
-					</div>
-					<div class="text__right-col">
-						<span>Bi-Weekly</span>
-						<span>Bin + Rollcart</span>
+			<div class="aside__field">
+				<span class="aside__label label">Pickup Type</span>
+				{% include "partials/components/_pickup-type.html" %}
+			</div>
+			<div class="aside__field">
+				<span class="aside__label label">Service Address</span>
+				{% include "partials/components/_service-address.html" %}
+				<div class="aside__wrap">
+					<div class="aside__row text">
+						<div class="text__left-col">
+							<span>Frequency</span>
+							<span>Bin Option</span>
+						</div>
+						<div class="text__right-col">
+							<span>Bi-Weekly</span>
+							<span>Bin + Rollcart</span>
+						</div>
 					</div>
 				</div>
 			</div>
+			
 		</div>
 		<div class="aside__footer price">
 			<div class="price__left">
