@@ -1,31 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="98px" height="98px" viewBox="0 0 98 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
-    <title>4B0DB1C2-34EB-4DB0-8B39-C2CA96BA298C</title>
-    <desc>Created with sketchtool.</desc>
-    <defs>
-        <filter x="-14.5%" y="-35.2%" width="128.9%" height="190.5%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="11" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.163722826 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-    </defs>
-    <g id="Checkout-Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="06a---Checkout-Copy" transform="translate(-1070.000000, -81.000000)" fill-rule="nonzero">
-            <g id="Group-2" transform="translate(1067.000000, 32.000000)">
-                <g id="Compost-type" filter="url(#filter-1)" transform="translate(0.000000, 40.000000)">
-                    <g id="Content" transform="translate(24.000000, 24.000000)">
-                        <g id="Green">
-                            <circle id="Oval" fill="#B7F5BA" cx="28" cy="28" r="28"></circle>
-                            <path d="M13.3999602,32.5817515 C14.4945089,28.326745 17.2096842,20.8525262 23.2792497,17.3482609 C32.0338011,12.2938183 44.4517476,17.4125913 44.4517476,17.4125913 C44.4517476,17.4125913 42.6757618,30.7262349 33.9212103,35.7806775 C28.0895128,39.1476097 20.6322443,38.0003455 16.3028178,36.8589769 L13.3087262,39.9870493 C12.8851792,40.4295494 12.1377916,40.4910503 11.6444595,40.1191182 L11.4471418,39.9703568 C10.955343,39.5995806 10.9169052,38.9595711 11.3647131,38.5434374 C11.3647131,38.5434374 12.1206281,37.8483342 12.7932261,37.2006387 L12.7947469,37.2025554 C12.7947469,37.2025554 18.1484601,31.9458429 21.1075134,29.6456329 C24.0665667,27.3454228 32.1763571,22.1363259 32.1763571,22.1363259 C32.1763571,22.1363259 27.2711996,23.7099153 21.9183679,26.9576718 C18.8531423,28.8174548 15.611149,31.030161 13.3999602,32.5817515 Z" id="Shape" fill="#00BA76"></path>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
+<svg width="56" height="56" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        CFD16CF1-220D-4AD2-8BCC-6412DB77F50B
+    </title>
+    <g fill-rule="nonzero" fill="none">
+        <circle fill="#B7F5BA" cx="28" cy="28" r="28"/>
+        <path d="M13.4 32.582c1.095-4.255 3.81-11.73 9.88-15.234 8.754-5.054 21.172.065 21.172.065s-1.776 13.313-10.53 18.368c-5.832 3.367-13.29 2.22-17.62 1.078l-2.993 3.128a1.29 1.29 0 0 1-1.665.132l-.197-.149c-.492-.37-.53-1.01-.082-1.427 0 0 .756-.695 1.428-1.342l.002.002s5.353-5.257 8.313-7.557c2.959-2.3 11.068-7.51 11.068-7.51s-4.905 1.574-10.258 4.822c-3.065 1.86-6.307 4.072-8.518 5.624z" fill="#00BA76"/>
     </g>
 </svg>
