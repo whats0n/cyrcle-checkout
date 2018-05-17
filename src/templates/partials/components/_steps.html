@@ -1,9 +1,14 @@
 <!-- begin steps -->
 <div class="steps">
+	<ul class="steps__lines">
+		{% for item in range(0, 3) %}
+			<li class="steps__line" data-steps-line="{{loop.index}}"></li>
+		{% endfor %}
+	</ul>
 	<ul class="steps__controls">
 		{% for item in range(0, 4) %}
 			<li class="steps__control" data-steps-control="{{loop.index}}">
-				<span class="steps__circle">{{mixins.icon('check steps__icon')}}</span>
+				<span class="steps__circle">{{mixins.icon('check', 'steps__icon')}}</span>
 			</li>
 		{% endfor %}
 	</ul>

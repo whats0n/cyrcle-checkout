@@ -1,10 +1,14 @@
 =control($name)
 	&[data-steps-control="#{$name}"]
 		@content
+=line($name)
+	&[data-steps-line="#{$name}"]
+		@content
 .steps
 	margin: 0 auto
 	max-width: 589px
 	height: 24px
+	position: relative
 	&__controls
 		position: relative
 		margin: 0 12px
@@ -40,7 +44,30 @@
 		height: 100%
 		border-radius: 50%
 		background-color: $white
-		// +vertical
+		+vertical
 	&__icon
+		display: inline-block
+		vertical-align: middle
 		font-size: 10px
 		fill: $dark-mint
+		transform: translateY(1px)
+	&__lines
+		position: absolute
+		left: 12px
+		top: 0
+		right: 12px
+		bottom: 0
+		font-size: 0
+	&__line
+		position: absolute
+		top: 50%
+		margin-top: -2px
+		width: 33.33%
+		height: 3px
+		background: rgba($black, 1)
+		+line("1")
+			left: 0
+		+line("2")
+			left: 33.33%
+		+line("3")
+			left: 66.66%
