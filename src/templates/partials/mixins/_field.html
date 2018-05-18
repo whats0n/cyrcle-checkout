@@ -1,0 +1,10 @@
+{% import 'partials/mixins/_mixins.html' as mixins %}
+
+{% macro call(props) %}
+	{% if props.input %}
+		<div class="field {{props.classList}}">
+			<input type="text" class="field__input" placeholder="{{props.placeholder}}">
+			{{mixins.icon('check', 'field__icon field__check')}}
+		</div>
+	{% endif %}
+{% endmacro %}
