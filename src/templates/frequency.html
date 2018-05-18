@@ -8,7 +8,43 @@ title: frequency
 <!-- begin main -->
 <div class="main">
 	<div class="inner">
-		{% include 'partials/components/_steps.html' %}
+		<div class="wrapper">
+			{% include 'partials/components/_steps.html' %}
+
+			<div class="title-md">How often do you want us to pickup?</div>
+
+			{% set choice = [
+				{
+					itemClassList: 'choice__item_indent',
+					id: 'item-0',
+					number: '4X',
+					title: 'Weekly',
+					price: '$29',
+					month: '4 pickups per month',
+					description: 'We will come by every week on the same day to pickup your compost.',
+					descriptionClassList: 'is-hidden'
+				},
+				{
+					itemClassList: 'choice__item_indent',
+					id: 'item-1',
+					number: '2X',
+					title: 'BI-weekly',
+					price: '$19',
+					month: '2 pickups per month',
+					description: 'We will come by every other week on the same day to pickup your compost.',
+					descriptionClassList: 'is-hidden'
+				}
+			] %}
+
+			{% include 'partials/components/_choice.html' %}
+
+			{% set controls = {
+				prev: 'back',
+				next: 'next',
+				disabled: 'disabled'
+			} %}
+			{% include 'partials/components/_btn-control.html' %}
+		</div>
 	</div>
 </div>
 <!-- end main -->
@@ -24,7 +60,7 @@ title: frequency
 				<span class="aside__label label">Pickup Type</span>
 				{% include "partials/components/_pickup-type.html" %}
 			</div>
-			<div class="aside__field">	
+			<div class="aside__field">
 				<span class="aside__label label">Service Address</span>
 				{% include "partials/components/_service-address.html" %}
 				<div class="aside__wrap">
@@ -37,7 +73,7 @@ title: frequency
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 		<div class="aside__footer price">
 			<div class="price__left">

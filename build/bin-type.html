@@ -14,45 +14,82 @@
       <!-- begin main -->
       <div class="main">
         <div class="inner">
-          <!-- begin steps -->
-          <div class="steps" data-steps-active="1">
-            <ul class="steps__lines">
-              <li class="steps__line" data-steps-line="1"></li>
-              <li class="steps__line" data-steps-line="2"></li>
-              <li class="steps__line" data-steps-line="3"></li>
-            </ul>
-            <ul class="steps__controls">
-              <li class="steps__control" data-steps-control="1">
-                <span class="steps__circle">
-                  <svg class="icon icon-check steps__icon">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
-                </span>
-              </li>
-              <li class="steps__control" data-steps-control="2">
-                <span class="steps__circle">
-                  <svg class="icon icon-check steps__icon">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
-                </span>
-              </li>
-              <li class="steps__control" data-steps-control="3">
-                <span class="steps__circle">
-                  <svg class="icon icon-check steps__icon">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
-                </span>
-              </li>
-              <li class="steps__control" data-steps-control="4">
-                <span class="steps__circle">
-                  <svg class="icon icon-check steps__icon">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
-                </span>
-              </li>
-            </ul>
+          <div class="wrapper">
+            <!-- begin steps -->
+            <div class="steps" data-steps-active="1">
+              <ul class="steps__lines">
+                <li class="steps__line" data-steps-line="1"></li>
+                <li class="steps__line" data-steps-line="2"></li>
+                <li class="steps__line" data-steps-line="3"></li>
+              </ul>
+              <ul class="steps__controls">
+                <li class="steps__control" data-steps-control="1">
+                  <span class="steps__circle">
+                    <svg class="icon icon-check steps__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                </li>
+                <li class="steps__control" data-steps-control="2">
+                  <span class="steps__circle">
+                    <svg class="icon icon-check steps__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                </li>
+                <li class="steps__control" data-steps-control="3">
+                  <span class="steps__circle">
+                    <svg class="icon icon-check steps__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                </li>
+                <li class="steps__control" data-steps-control="4">
+                  <span class="steps__circle">
+                    <svg class="icon icon-check steps__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <!-- end steps -->
+            <div class="title-md">What type of bin?</div>
+            <!-- begin choice -->
+            <div class="choice">
+              <div class="choice__wrapper">
+                <input type="radio" name="radio" class="choice__input" id="item-0">
+                <div class="choice__item choice__item_indent">
+                  <div class="choice__img choice__img_sm">
+                    <img src="img/basket.svg" alt="home" class="img">
+                  </div>
+                  <div class="title-sm choice__title">Counter top Bin</div>
+                  <div class="choice__price">FREE</div>
+                  <div class="choice__description ">Small 2.5 gallon container that looks good on your countertop. Store aditional bags in your own container</div>
+                  <label for="item-0" class="choice__radio"></label>
+                </div>
+              </div>
+              <div class="choice__wrapper">
+                <input type="radio" name="radio" class="choice__input" id="item-1">
+                <div class="choice__item choice__item_indent">
+                  <div class="choice__img choice__img_sm">
+                    <img src="img/baskets.svg" alt="home" class="img">
+                  </div>
+                  <div class="title-sm choice__title">Counter top Bin + Rollcart</div>
+                  <div class="choice__price">$6</div>
+                  <div class="choice__description ">Get the free bin and fill up a rollcart with unlimited bags of compost and get curbside pickup</div>
+                  <label for="item-1" class="choice__radio"></label>
+                </div>
+              </div>
+            </div>
+            <!-- end choice -->
+            <!-- begin btn-wrapper -->
+            <div class="btn-control">
+              <button class="btn btn-control__prev">back</button>
+              <button class="btn btn-control__next" disabled>next</button>
+            </div>
+            <!-- end btn-wrapper -->
           </div>
-          <!-- end steps -->
         </div>
       </div>
       <!-- end main -->

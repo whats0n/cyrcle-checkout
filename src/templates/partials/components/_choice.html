@@ -1,26 +1,32 @@
 <!-- begin choice -->
 <div class="choice">
-	<div class="choice__wrapper">
-		<input type="radio" name="radio" class="choice__input" id="item-1">
-		<div class="choice__item">
-			<div class="choice__selected">selected</div>
-			<div class="choice__img"><img src="img/home.svg" alt="home" class="img"></div>
-			<div class="title-sm choice__title">I live in a </div>
-			<div class="choice__label">Stand alone Home</div>
-			<div class="choice__description">I live in a home that has a driveway and room for a rollcart for curbside pickup</div>
-			<label for="item-1" class="choice__radio"></label>
+	{% for item in choice %}
+		<div class="choice__wrapper">
+			<input type="radio" name="radio" class="choice__input" id="{{item.id}}">
+			<div class="choice__item {{item.itemClassList}}">
+				{% if item.selected %}
+					<div class="choice__selected">selected</div>
+				{% endif %}
+				{% if item.img %}
+					<div class="choice__img {{item.imgClassList}}"><img src="img/{{item.img}}.svg" alt="home" class="img"></div>
+				{% endif %}
+				{% if item.number %}
+					<div class="choice__number"><span>{{item.number}}</span></div>
+				{% endif %}
+				<div class="title-sm choice__title">{{item.title}}</div>
+				{% if item.label %}
+					<div class="choice__label">{{item.label}}</div>
+				{% endif %}
+				{% if item.price %}
+					<div class="choice__price">{{item.price}}</div>
+				{% endif %}
+				{% if item.month %}
+					<div class="choice__month">{{item.month}}</div>
+				{% endif %}
+				<div class="choice__description {{item.descriptionClassList}}">{{item.description}}</div>
+				<label for="{{item.id}}" class="choice__radio"></label>
+			</div>
 		</div>
-	</div>
-	<div class="choice__wrapper">
-		<input type="radio" name="radio" class="choice__input" id="item-2">
-		<div class="choice__item">
-			<div class="choice__selected">selected</div>
-			<div class="choice__img"><img src="img/build.svg" alt="build" class="img"></div>
-			<div class="title-sm choice__title">I live in a </div>
-			<div class="choice__label">Apartment or Highrise</div>
-			<div class="choice__description">I live in a apartment complex or highrise and do not have a driveway</div>
-			<label for="item-2" class="choice__radio"></label>
-		</div>
-	</div>
+	{% endfor %}
 </div>
 <!-- end choice -->

@@ -8,7 +8,42 @@ title: bin-type
 <!-- begin main -->
 <div class="main">
 	<div class="inner">
-		{% include 'partials/components/_steps.html' %}
+		<div class="wrapper">
+			{% include 'partials/components/_steps.html' %}
+
+			<div class="title-md">What type of bin?</div>
+
+			{% set choice = [
+				{
+					itemClassList: 'choice__item_indent',
+					id: 'item-0',
+					img: 'basket',
+					imgClassList: 'choice__img_sm',
+					title: 'Counter top Bin',
+					price: 'FREE',
+					description: 'Small 2.5 gallon container that looks good on your countertop. Store aditional bags in your own container'
+				},
+				{
+					itemClassList: 'choice__item_indent',
+					id: 'item-1',
+					img: 'baskets',
+					imgClassList: 'choice__img_sm',
+					title: 'Counter top Bin + Rollcart',
+					price: '$6',
+					description: 'Get the free bin and fill up a rollcart with unlimited bags of compost and get curbside pickup'
+				}
+			] %}
+
+			{% include 'partials/components/_choice.html' %}
+
+			{% set controls = {
+				prev: 'back',
+				next: 'next',
+				disabled: 'disabled'
+			} %}
+			{% include 'partials/components/_btn-control.html' %}
+		</div>
+
 	</div>
 </div>
 <!-- end main -->
@@ -37,7 +72,7 @@ title: bin-type
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 		<div class="aside__footer price">
 			<div class="price__left">

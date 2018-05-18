@@ -13,6 +13,25 @@ title: Home
 
 			<div class="title-md">What type of dwelling do you live in?</div>
 
+			{% set choice = [
+				{
+					id: 'item-0',
+					selected: true,
+					img: 'home',
+					title: 'I live in a',
+					label: 'Standalone Home',
+					description: 'I live in a home that has a driveway and room for a rollcart for curbside pickup'
+				},
+				{
+					id: 'item-1',
+					selected: true,
+					img: 'build',
+					title: 'I live in a',
+					label: 'Apartment or Highrise',
+					description: 'I live in a apartment complex or highrise and do not have a driveway'
+				}
+			] %}
+
 			{% include 'partials/components/_choice.html' %}
 
 

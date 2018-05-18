@@ -24,31 +24,31 @@ title: Home
 					}
 				]
 			] %}
+			<div class="inner__in">
+				<div class="grid">
+					{% for row in grid %}
+						<div class="grid__row">
+							{% for col in row %}
+								<div class="grid__col {{col.classList}}">
+									{% if col.innerCols %}
+										<div class="grid__row">
+											{% for innerCol in col.innerCols %}
+												<div class="grid__col {{innerCol.classList}}">
+													{{field.call(innerCol.fieldOptions)}}
+												</div>
+											{% endfor %}
+										</div>
+									{% else %}
+										{{field.call(col.fieldOptions)}}
+									{% endif %}
+								</div>
+							{% endfor %}
+						</div>
+					{% endfor %}
+				</div>
 
-			<div class="grid">
-				{% for row in grid %}
-					<div class="grid__row">
-						{% for col in row %}
-							<div class="grid__col {{col.classList}}">
-								{% if col.innerCols %}
-									<div class="grid__row">
-										{% for innerCol in col.innerCols %}
-											<div class="grid__col {{innerCol.classList}}">
-												{{field.call(innerCol.fieldOptions)}}
-											</div>
-										{% endfor %}
-									</div>
-								{% else %}
-									{{field.call(col.fieldOptions)}}
-								{% endif %}
-							</div>
-						{% endfor %}
-					</div>
-				{% endfor %}
+				{% include 'partials/components/_contacts.html' %}
 			</div>
-
-			{% include 'partials/components/_contacts.html' %}
-
 			{% set controls = {
 				prev: 'back',
 				next: 'next',

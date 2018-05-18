@@ -19,6 +19,9 @@
 		text-align: center
 		padding: 25px 35px 55px
 		margin-bottom: 30px
+		min-height: 348px
+		&_indent
+			padding-bottom: 40px
 		+lg
 			padding-top: 35px
 		+xxs
@@ -53,6 +56,28 @@
 		margin-bottom: 15px
 		text-transform: uppercase
 		transition: color .24s
+	&__number
+		width: 90px
+		height: 90px
+		margin: 0 auto 30px
+		position: relative
+		border-radius: 50%
+		background: $white
+		+vertical
+		transition: background .24s
+		span
+			display: inline-block
+			vertical-align: middle
+			color: $peach
+			+f(37px, 600, 1)
+			transition: color .24s
+	&__price
+		position: relative
+		color: $white
+		margin-bottom: 20px
+		+f(40px, null, 1)
+		letter-spacing: .8px
+		transition: color .24s
 	&__label
 		position: relative
 		text-transform: uppercase
@@ -61,16 +86,26 @@
 		letter-spacing: 1.3px
 		color: $white
 		transition: color .24s, transform .24s
+	&__month
+		position: relative
+		color: $white
+		+f(16px, 600, 1.5)
+		text-transform: uppercase
+		letter-spacing: 1.3px
 	&__description
 		position: relative
 		+f(15px, null, 1.87)
 		color: rgba($white, .7)
 		transition: color .24s
+		&.is-hidden
+			display: none
 	&__img
 		position: relative
-		height: 107px
+		height: 92px
 		margin-bottom: 24px
 		+bottom
+		&_sm
+			height: 77px
 		.img
 			display: inline-block
 			vertical-align: bottom
@@ -94,15 +129,25 @@
 					transform: scale(1.150, 1.108)
 					+lg
 						transform: scale(1)
-			~ .choice__item .choice__title
-				color: $dark-grey-blue-two
-			~ .choice__item .choice__selected
-				opacity: 1
-			~ .choice__item .choice__label
-				transform: translateY(6px) scale(1.47)
-				color: $dark-mint
-				letter-spacing: .3px
-				+sm
-					transform: scale(1.27)
-			~ .choice__item .choice__description
-				color: $bluey-grey-two
+				.choice__title
+					color: $dark-grey-blue-two
+				.choice__selected
+					opacity: 1
+				.choice__price
+					color: $dark-mint
+				.choice__label
+					transform: translateY(6px) scale(1.47)
+					color: $dark-mint
+					letter-spacing: .3px
+					+sm
+						transform: scale(1.27)
+				.choice__description
+					color: $bluey-grey-two
+					&.is-hidden
+						display: block
+				.choice__number
+					background: $twilight-two
+					span
+						color: $white
+				.choice__month
+					display: none

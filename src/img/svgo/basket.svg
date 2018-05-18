@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="64px" viewBox="0 0 44 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>basket</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 43.1619048 0 36.8761905 41.4117647 6.28571429 41.4117647"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="05a---Bin-Type" transform="translate(-271.000000, -262.000000)">
+            <g id="basket" transform="translate(271.000000, 262.000000)">
+                <g id="Group-9">
+                    <path d="M40.9338099,23.0501349 C39.6324107,11.1039157 31.53767,2.09150327 22.0249819,2.09150327 C12.5122938,2.09150327 4.41755311,11.1039157 3.11615388,23.0501349 L40.9338099,23.0501349 Z M43.0403019,23.0501349 C43.0449899,23.0960101 43.0495836,23.141922 43.0540827,23.1878704 L41.1702683,25.1416382 L41.090014,25.1416381 C41.0611508,24.435518 41.0087407,23.7379635 40.9338099,23.0501349 L43.0403019,23.0501349 Z M0.863077153,25.1416382 C1.39952065,11.143611 10.6688481,0 22.0249819,0 C33.3811157,0 42.6504432,11.143611 43.1868867,25.1416382 L0.863077153,25.1416382 Z" id="Combined-Shape" fill="#FFA27B" fill-rule="nonzero"></path>
+                    <g id="Rectangle-2-Copy" transform="translate(0.419048, 22.588235)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#FFCCA5" xlink:href="#path-1"></use>
+                        <polygon fill="#FFA27B" mask="url(#mask-2)" points="0 0 21.5809524 0 21.5809524 41.4117647 3.14285714 41.4117647"></polygon>
+                    </g>
+                    <rect id="Rectangle-2" fill="#FFFFFF" x="41.9047619" y="19.6601307" width="2.0952381" height="5.85620915" rx="1.04761905"></rect>
+                    <rect id="Rectangle-2-Copy-2" fill="#FFFFFF" x="0" y="19.6601307" width="2.0952381" height="5.85620915" rx="1.04761905"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
