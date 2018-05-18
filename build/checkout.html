@@ -60,27 +60,33 @@
       <aside class="aside">
         <div class="aside__container">
           <div class="aside__wrapper">
-            <span class="aside__label label aside__label_mod">Pickup Type</span>
-            <div class="pickup">
-              <div class="pickup__wrap">
-                <div class="pickup__image" style="background-image: url(img/green.svg)"></div>
-                <div class="pickup__text">
-                  <h6 class="pickup__title">Compostable waste</h6>
-                  <p>Turn your scraps into soil</p>
+            <div class="aside__field">
+              <span class="aside__label label">Pickup Type</span>
+              <div class="pickup">
+                <div class="pickup__wrap">
+                  <div class="pickup__image" style="background-image: url(img/green.svg)"></div>
+                  <div class="pickup__text">
+                    <h6 class="pickup__title">Compostable waste</h6>
+                    <p>Turn your scraps into soil</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <span class="aside__label label">Service Address</span>
-            <div class="service-address"> </div>
-            <div class="aside__wrap">
-              <div class="aside__row text">
-                <div class="text__left-col">
-                  <span>Frequency</span>
-                  <span>Bin Option</span>
-                </div>
-                <div class="text__right-col">
-                  <span>Bi-Weekly</span>
-                  <span>Bin + Rollcart</span>
+            <div class="aside__field">
+              <span class="aside__label label">Service Address</span>
+              <div class="service-address">
+                <div class="map js-map" data-center-lat="55.753678" data-center-lng="37.621103"></div>
+              </div>
+              <div class="aside__wrap">
+                <div class="aside__row text">
+                  <div class="text__left-col">
+                    <span>Frequency</span>
+                    <span>Bin Option</span>
+                  </div>
+                  <div class="text__right-col">
+                    <span>Bi-Weekly</span>
+                    <span>Bin + Rollcart</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -99,6 +105,7 @@
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMWIxCN9ijYRfiH7bmQN-LNRDtoboLZqY"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->
   </body>
