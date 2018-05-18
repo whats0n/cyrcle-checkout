@@ -1,5 +1,5 @@
 ---
-title: frequency
+title: checkout-referral
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -17,34 +17,58 @@ title: frequency
 <aside class="aside">
 	<div class="aside__container">
 		<div class="aside__wrapper">
-		<div class="aside__head">
-			<h3 class="aside__title title">Compost Plan</h3>
-		</div>
 			<div class="aside__field">
 				<span class="aside__label label">Pickup Type</span>
 				{% include "partials/components/_pickup-type.html" %}
 			</div>
-			<div class="aside__field">	
+			<div class="aside__field">
 				<span class="aside__label label">Service Address</span>
 				{% include "partials/components/_service-address.html" %}
 				<div class="aside__wrap">
 					<div class="aside__row text">
 						<div class="text__left-col">
 							<span>Frequency</span>
+							<span>Bin Option</span>
 						</div>
 						<div class="text__right-col">
 							<span>Bi-Weekly</span>
+							<span>Bin + Rollcart</span>
+						</div>
+					</div>
+					<div class="text__dropdown">
+						<div class="text__wrap">
+							<span>Have a Referral Code?</span>
+							<div class="text__apply apply">
+								<form class="apply__form" action="#">
+									<input class="apply__search" type="search" placeholder="Enter Code">
+									<button class="apply__button" type="submit">Apply</button>
+								</form>
+								<span class="apply__arrow-down">
+									{{mixins.icon('arrow-down')}}
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="aside__row text">
+						<div class="text__left-col">
+							<span>First Month</span>
+							<span>Bin Delivery</span>
+						</div>
+						<div class="text__right-col">
+							<span>Free</span>
+							<span>Free</span>
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
+			
 		</div>
 		<div class="aside__footer price">
 			<div class="price__left">
 				<span>Monthly Fee</span>
 			</div>
 			<div class="price__right">
-				<span>$19/mo</span>
+				<span>$35/mo</span>
 			</div>
 		</div>
 	</div>
