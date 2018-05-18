@@ -1,0 +1,73 @@
+---
+title: Home
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<!-- begin main -->
+<div class="main">
+	<div class="inner">
+		<div class="wrapper">
+			{% include 'partials/components/_steps.html' %}
+
+			<div class="title-md">Personal info</div>
+
+			{% set grid = [
+				[
+					{
+						classList: 'grid__col_100',
+						fieldOptions: {
+							input: true,
+							placeholder: 'Enter Address'
+						}
+					}
+				]
+			] %}
+
+			<div class="grid">
+				{% for row in grid %}
+					<div class="grid__row">
+						{% for col in row %}
+							<div class="grid__col {{col.classList}}">
+								{% if col.innerCols %}
+									<div class="grid__row">
+										{% for innerCol in col.innerCols %}
+											<div class="grid__col {{innerCol.classList}}">
+												{{field.call(innerCol.fieldOptions)}}
+											</div>
+										{% endfor %}
+									</div>
+								{% else %}
+									{{field.call(col.fieldOptions)}}
+								{% endif %}
+							</div>
+						{% endfor %}
+					</div>
+				{% endfor %}
+			</div>
+
+			{% include 'partials/components/_contacts.html' %}
+
+			{% set controls = {
+				prev: 'back',
+				next: 'next',
+				disabled: 'disabled'
+			} %}
+			{% include 'partials/components/_btn-control.html' %}
+		</div>
+	</div>
+</div>
+<!-- end main -->
+
+<!--aside begin -->
+<aside class="aside">
+	<div class="aside__head">
+		<h3 class="aside__title title">Compost Plan</h3>
+	</div>
+	<span class="aside__label label">Pickup Type</span>
+	{% include "partials/components/_pickup-type.html" %}
+</aside>
+<!--aside end -->
+
+{% endblock %}

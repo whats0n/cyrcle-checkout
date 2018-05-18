@@ -14,45 +14,109 @@
       <!-- begin main -->
       <div class="main">
         <div class="inner">
-          <!-- begin steps -->
-          <div class="steps" data-steps-active="1">
-            <ul class="steps__lines">
-              <li class="steps__line" data-steps-line="1"></li>
-              <li class="steps__line" data-steps-line="2"></li>
-              <li class="steps__line" data-steps-line="3"></li>
-            </ul>
-            <ul class="steps__controls">
-              <li class="steps__control" data-steps-control="1">
-                <span class="steps__circle">
-                  <svg class="icon icon-check steps__icon">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
-                </span>
-              </li>
-              <li class="steps__control" data-steps-control="2">
-                <span class="steps__circle">
-                  <svg class="icon icon-check steps__icon">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
-                </span>
-              </li>
-              <li class="steps__control" data-steps-control="3">
-                <span class="steps__circle">
-                  <svg class="icon icon-check steps__icon">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
-                </span>
-              </li>
-              <li class="steps__control" data-steps-control="4">
-                <span class="steps__circle">
-                  <svg class="icon icon-check steps__icon">
-                    <use xlink:href="img/sprite.svg#icon-check"></use>
-                  </svg>
-                </span>
-              </li>
-            </ul>
+          <div class="wrapper">
+            <!-- begin steps -->
+            <div class="steps" data-steps-active="1">
+              <ul class="steps__lines">
+                <li class="steps__line" data-steps-line="1"></li>
+                <li class="steps__line" data-steps-line="2"></li>
+                <li class="steps__line" data-steps-line="3"></li>
+              </ul>
+              <ul class="steps__controls">
+                <li class="steps__control" data-steps-control="1">
+                  <span class="steps__circle">
+                    <svg class="icon icon-check steps__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                </li>
+                <li class="steps__control" data-steps-control="2">
+                  <span class="steps__circle">
+                    <svg class="icon icon-check steps__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                </li>
+                <li class="steps__control" data-steps-control="3">
+                  <span class="steps__circle">
+                    <svg class="icon icon-check steps__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                </li>
+                <li class="steps__control" data-steps-control="4">
+                  <span class="steps__circle">
+                    <svg class="icon icon-check steps__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <!-- end steps -->
+            <div class="inner__in">
+              <div class="payment">
+                <div class="title-md payment__title">Set up Payment Method</div>
+                <div class="payment__header">
+                  <div class="payment__subtitle">Credit Card</div>
+                  <div class="payment__icons">
+                    <img src="img/master-card.svg" alt="Master Card" class="payment__icon">
+                    <img src="img/visa.svg" alt="Visa" class="payment__icon">
+                    <img src="img/amex.svg" alt="Amex" class="payment__icon"> </div>
+                </div>
+                <div class="payment__description">We use
+                  <strong>Stripe</strong> to safely and securely charge your credit card. They are PCI compliant and the best at what they do</div>
+                <div class="payment__form">
+                  <div class="grid">
+                    <div class="grid__row">
+                      <div class="grid__col grid__col_100">
+                        <div class="field ">
+                          <img src="img/card.svg" alt="card" class="field__icon field__card">
+                          <svg class="icon icon-check field__icon field__check">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                          <input type="text" class="field__input" placeholder="Card Number"> </div>
+                      </div>
+                    </div>
+                    <div class="grid__row">
+                      <div class="grid__col grid__col_50 grid__col_sm-100">
+                        <div class="field ">
+                          <svg class="icon icon-check field__icon field__check">
+                            <use xlink:href="img/sprite.svg#icon-check"></use>
+                          </svg>
+                          <input type="text" class="field__input" placeholder="Name on Card"> </div>
+                      </div>
+                      <div class="grid__col grid__col_50 grid__col_sm-100">
+                        <div class="grid__row">
+                          <div class="grid__col grid__col_50">
+                            <div class="field is-valid">
+                              <svg class="icon icon-check field__icon field__check">
+                                <use xlink:href="img/sprite.svg#icon-check"></use>
+                              </svg>
+                              <input type="text" class="field__input" placeholder="Exp Date"> </div>
+                          </div>
+                          <div class="grid__col grid__col_50">
+                            <div class="field ">
+                              <span class="field__icon field__help">?</span>
+                              <svg class="icon icon-check field__icon field__check">
+                                <use xlink:href="img/sprite.svg#icon-check"></use>
+                              </svg>
+                              <input type="text" class="field__input" placeholder="CVV"> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- begin btn-wrapper -->
+            <div class="btn-control">
+              <button class="btn btn-control__prev">Back</button>
+              <button class="btn btn-control__next" disabled>Start Trial</button>
+            </div>
+            <!-- end btn-wrapper -->
           </div>
-          <!-- end steps -->
         </div>
       </div>
       <!-- end main -->
