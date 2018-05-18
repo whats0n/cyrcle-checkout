@@ -3,8 +3,8 @@ export default class Map {
     this._mapHTML = config.map.get(0);
     this._icon = './img/marker.png';
     this._center = {
-      lat: +config.map.data('center-lat'),
-      lng: +config.map.data('center-lng')
+      lat: 40.7127753,
+      lng: -74.0059728,
     };
     this.modal = null,
     this.duration = 300;
@@ -16,10 +16,11 @@ export default class Map {
   _createMap() {
     this._map = new google.maps.Map(this._mapHTML, {
       center: this._center,
-      zoom: 14,
+      zoom: 16,
       disableDefaultUI: true,
       scrollwheel: false,
       zoomControl: true,
+      zoomControl: false,
       backgroundColor: '#e9e9e9',
       styles: [
         {
