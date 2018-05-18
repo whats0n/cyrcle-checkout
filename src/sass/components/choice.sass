@@ -1,0 +1,108 @@
+.choice
+	display: flex
+	margin: 0 -30px
+	+lg
+		margin: 0 -15px
+	+sm
+		flex-direction: column
+	&__wrapper
+		padding: 0 30px
+		width: 50%
+		display: flex
+		+lg
+			padding: 0 15px
+		+sm
+			width: 100%
+	&__item
+		position: relative
+		width: 100%
+		text-align: center
+		padding: 25px 35px 55px
+		margin-bottom: 30px
+		+lg
+			padding-top: 35px
+		+xxs
+			padding-left: 20px
+			padding-right: 20px
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			top: 0
+			right: 0
+			bottom: 0
+			background-color: $twilight-two
+			box-shadow: 0 1px 5px 0 rgba($black, .2)
+			transform: scale(1)
+			transition: transform .24s, background .24s, border-radius .24s
+	&__selected
+		position: absolute
+		left: 0
+		right: 0
+		top: 5px
+		letter-spacing: 1.2px
+		text-transform: uppercase
+		opacity: 0
+		color: $iris
+		+f(14px, 600, 1.72)
+		transition: opacity .24ss
+		+lg
+			top: 10px
+	&__title
+		position: relative
+		margin-bottom: 15px
+		text-transform: uppercase
+		transition: color .24s
+	&__label
+		position: relative
+		text-transform: uppercase
+		margin-bottom: 25px
+		+f(15px, 600, 1.6)
+		letter-spacing: 1.3px
+		color: $white
+		transition: color .24s, transform .24s
+	&__description
+		position: relative
+		+f(15px, null, 1.87)
+		color: rgba($white, .7)
+		transition: color .24s
+	&__img
+		position: relative
+		height: 107px
+		margin-bottom: 24px
+		+bottom
+		.img
+			display: inline-block
+			vertical-align: bottom
+			max-width: 100%
+			max-height: 100%
+	&__radio
+		position: absolute
+		z-index: 5
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		cursor: pointer
+	&__input
+		display: none
+		&:checked
+			~ .choice__item
+				&:before
+					border-radius: 6px
+					background: $white
+					transform: scale(1.150, 1.108)
+					+lg
+						transform: scale(1)
+			~ .choice__item .choice__title
+				color: $dark-grey-blue-two
+			~ .choice__item .choice__selected
+				opacity: 1
+			~ .choice__item .choice__label
+				transform: translateY(6px) scale(1.47)
+				color: $dark-mint
+				letter-spacing: .3px
+				+sm
+					transform: scale(1.27)
+			~ .choice__item .choice__description
+				color: $bluey-grey-two

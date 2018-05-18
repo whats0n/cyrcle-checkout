@@ -15,17 +15,20 @@ body
 		height: auto
 .main
 	flex-grow: 1
-	padding: 80px 0 40px
 	+gb($twilight, $dark-grey-blue)
 	+md
 		padding: 40px 0
 .inner
-	position: relative
 	padding-left: 20px
 	padding-right: 20px
 	margin-left: auto
 	margin-right: auto
 	max-width: 845px
+.wrapper
+	position: relative
+	padding: 80px 0 195px
+	+md
+		padding: 0 0 60px
 
 .label
 	display: block
@@ -41,4 +44,14 @@ body
 	font-weight: 600
 	line-height: 1.33
 	text-align: center
-	color: $dark-grey-blue-two	
+	color: $dark-grey-blue-two
+
+.title-md
+	+f(22px, null, 1.45)
+	text-align: center
+	margin-bottom: 40px
+	color: $white
+.title-sm
+	+f(14px, 600, 1.72)
+	letter-spacing: 1.2px
+	color: $white
