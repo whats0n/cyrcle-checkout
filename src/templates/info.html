@@ -13,6 +13,63 @@ title: Home
 
 			<div class="title-md">Personal info</div>
 
+			{% set grid = [
+				[
+					{
+						classList: 'grid__col_50 grid__col_xs-100',
+						fieldOptions: {
+							input: true,
+							placeholder: 'First Name'
+						}
+					},
+					{
+						classList: 'grid__col_50 grid__col_xs-100',
+						fieldOptions: {
+							input: true,
+							placeholder: 'Last Name'
+						}
+					}
+				],
+				[
+					{
+						classList: 'grid__col_50 grid__col_xs-100',
+						fieldOptions: {
+							input: true,
+							placeholder: 'Phone'
+						}
+					},
+					{
+						classList: 'grid__col_50 grid__col_xs-100',
+						fieldOptions: {
+							input: true,
+							placeholder: 'Email'
+						}
+					}
+				]
+			] %}
+
+				<div class="grid">
+					{% for row in grid %}
+						<div class="grid__row">
+							{% for col in row %}
+								<div class="grid__col {{col.classList}}">
+									{% if col.innerCols %}
+										<div class="grid__row">
+											{% for innerCol in col.innerCols %}
+												<div class="grid__col {{innerCol.classList}}">
+													{{field.call(innerCol.fieldOptions)}}
+												</div>
+											{% endfor %}
+										</div>
+									{% else %}
+										{{field.call(col.fieldOptions)}}
+									{% endif %}
+								</div>
+							{% endfor %}
+						</div>
+					{% endfor %}
+				</div>
+
 			{% set controls = {
 				prev: 'back',
 				next: 'next',
