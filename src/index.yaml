@@ -8,4 +8,6 @@ PageList:
 - file: checkout.html
   ready: 50
 - file: bin-type.html
-  ready: 50  
+  ready: 50
+- file: checkout-referral.html
+  ready: 50    
