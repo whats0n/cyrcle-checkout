@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>delivery-address</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -16,7 +16,7 @@
         <div class="inner">
           <div class="wrapper">
             <!-- begin steps -->
-            <div class="steps" data-steps-active="1">
+            <div class="steps" data-steps-active="2">
               <ul class="steps__lines">
                 <li class="steps__line" data-steps-line="1"></li>
                 <li class="steps__line" data-steps-line="2"></li>
@@ -55,48 +55,39 @@
             </div>
             <!-- end steps -->
             <div class="title-md">Personal info</div>
-            <div class="grid">
-              <div class="grid__row">
-                <div class="grid__col grid__col_50 grid__col_xs-100">
-                  <div class="field ">
-                    <input type="text" class="field__input" placeholder="First Name">
-                    <svg class="icon icon-check field__icon field__check">
-                      <use xlink:href="img/sprite.svg#icon-check"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="grid__col grid__col_50 grid__col_xs-100">
-                  <div class="field ">
-                    <input type="text" class="field__input" placeholder="Last Name">
-                    <svg class="icon icon-check field__icon field__check">
-                      <use xlink:href="img/sprite.svg#icon-check"></use>
-                    </svg>
+            <div class="inner__in">
+              <div class="grid">
+                <div class="grid__row">
+                  <div class="grid__col grid__col_100">
+                    <div class="field is-valid">
+                      <svg class="icon icon-check field__icon field__check">
+                        <use xlink:href="img/sprite.svg#icon-check"></use>
+                      </svg>
+                      <input type="text" class="field__input" placeholder="Enter Address"> </div>
                   </div>
                 </div>
               </div>
-              <div class="grid__row">
-                <div class="grid__col grid__col_50 grid__col_xs-100">
-                  <div class="field ">
-                    <input type="text" class="field__input" placeholder="Phone">
-                    <svg class="icon icon-check field__icon field__check">
-                      <use xlink:href="img/sprite.svg#icon-check"></use>
-                    </svg>
+              <!-- begin contacts -->
+              <div class="contacts">
+                <div class="contacts__item contacts__info">
+                  <div class="contacts__img">
+                    <img src="img/home-simple.svg" alt="home-simple" class="img">
+                  </div>
+                  <div class="contacts__address">
+                    <span>934 St Charles Ave NE</span>
+                    <p>Atlanta, Ga, 30306</p>
                   </div>
                 </div>
-                <div class="grid__col grid__col_50 grid__col_xs-100">
-                  <div class="field ">
-                    <input type="text" class="field__input" placeholder="Email">
-                    <svg class="icon icon-check field__icon field__check">
-                      <use xlink:href="img/sprite.svg#icon-check"></use>
-                    </svg>
-                  </div>
+                <div class="contacts__item">
+                  <div class="contacts__map js-map"></div>
                 </div>
               </div>
+              <!-- end contacts -->
             </div>
             <!-- begin btn-wrapper -->
             <div class="btn-control">
               <button class="btn btn-control__prev">back</button>
-              <button class="btn btn-control__next" disabled>next</button>
+              <button class="btn btn-control__next is-active">next</button>
             </div>
             <!-- end btn-wrapper -->
           </div>

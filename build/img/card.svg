@@ -1,0 +1,24 @@
+<svg id="Слой_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.8 19.1">
+    <style>
+        .st0{fill:#86e8ab}.st1{fill:#59c78a}.st2{fill:#2f8e59}
+    </style>
+    <title>
+        card
+    </title>
+    <g id="Page-1">
+        <g id="_x30_6a---Checkout-Copy" transform="translate(-811 -358)">
+            <g id="Group-2" transform="translate(171 348)">
+                <g id="card" transform="translate(640 10)">
+                    <g id="card_icon">
+                        <g id="Rectangle-4">
+                            <path class="st0" d="M2.1 0h27.5c1.2 0 2.1.9 2.1 2.1v14.8c0 1.2-.9 2.1-2.1 2.1H2.1C.9 19 0 18.1 0 16.9V2.1C0 .9.9 0 2.1 0z" id="path-1"/>
+                            <path class="st1" d="M29.1 19.1H2.6c-1.5 0-2.6-1.2-2.6-2.6V2.6C0 1.2 1.2 0 2.6 0h26.5c1.5 0 2.6 1.2 2.6 2.6v13.8c.1 1.5-1.1 2.7-2.6 2.7zM2.6 1.1c-.9 0-1.6.7-1.6 1.6v13.8c0 .9.7 1.6 1.6 1.6h26.5c.9 0 1.6-.7 1.6-1.6V2.6c0-.9-.7-1.6-1.6-1.6H2.6z"/>
+                        </g>
+                        <path class="st2" d="M7.4 5.3h3.2c.6 0 1.1.5 1.1 1.1v1.1c0 .6-.5 1.1-1.1 1.1H7.4c-.6-.1-1-.6-1-1.2v-1c0-.6.4-1.1 1-1.1z" id="Rectangle-5"/>
+                        <path class="st2" d="M5.8 12.7h20.1v1.1H5.8z" id="Line"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

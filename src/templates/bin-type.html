@@ -9,6 +9,10 @@ title: bin-type
 <div class="main">
 	<div class="inner">
 		<div class="wrapper">
+			{% set steps = {
+				active: '3'
+			} %}
+
 			{% include 'partials/components/_steps.html' %}
 
 			<div class="title-md">What type of bin?</div>

@@ -9,6 +9,10 @@ title: frequency
 <div class="main">
 	<div class="inner">
 		<div class="wrapper">
+			{% set steps = {
+				active: '2.5'
+			} %}
+
 			{% include 'partials/components/_steps.html' %}
 
 			<div class="title-md">How often do you want us to pickup?</div>
@@ -52,10 +56,10 @@ title: frequency
 <!--aside begin -->
 <aside class="aside">
 	<div class="aside__container">
+		<div class="aside__wrapper">
 		<div class="aside__head">
 			<h3 class="aside__title title">Compost Plan</h3>
 		</div>
-		<div class="aside__wrapper">
 			<div class="aside__field">
 				<span class="aside__label label">Pickup Type</span>
 				{% include "partials/components/_pickup-type.html" %}

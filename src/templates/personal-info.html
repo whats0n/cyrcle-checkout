@@ -1,5 +1,5 @@
 ---
-title: Home
+title: personal-info
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -9,6 +9,10 @@ title: Home
 <div class="main">
 	<div class="inner">
 		<div class="wrapper">
+			{% set steps = {
+				active: '1.5'
+			} %}
+
 			{% include 'partials/components/_steps.html' %}
 
 			<div class="title-md">Personal info</div>
@@ -16,15 +20,39 @@ title: Home
 			{% set grid = [
 				[
 					{
-						classList: 'grid__col_100',
+						classList: 'grid__col_50 grid__col_xs-100',
+						fieldOptions: {
+							classList: 'is-valid',
+							input: true,
+							placeholder: 'First Name'
+						}
+					},
+					{
+						classList: 'grid__col_50 grid__col_xs-100',
 						fieldOptions: {
 							input: true,
-							placeholder: 'Enter Address'
+							placeholder: 'Last Name'
+						}
+					}
+				],
+				[
+					{
+						classList: 'grid__col_50 grid__col_xs-100',
+						fieldOptions: {
+							input: true,
+							placeholder: 'Phone'
+						}
+					},
+					{
+						classList: 'grid__col_50 grid__col_xs-100',
+						fieldOptions: {
+							input: true,
+							placeholder: 'Email'
 						}
 					}
 				]
 			] %}
-			<div class="inner__in">
+
 				<div class="grid">
 					{% for row in grid %}
 						<div class="grid__row">
@@ -47,12 +75,10 @@ title: Home
 					{% endfor %}
 				</div>
 
-				{% include 'partials/components/_contacts.html' %}
-			</div>
 			{% set controls = {
 				prev: 'back',
 				next: 'next',
-				disabled: 'disabled'
+				classList: 'is-active'
 			} %}
 			{% include 'partials/components/_btn-control.html' %}
 		</div>

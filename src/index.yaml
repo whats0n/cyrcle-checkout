@@ -1,11 +1,10 @@
 ProjectTitle: cyrcle
 
 PageList:
-- file: page.html
-  ready: 50
+- file: dwelling-type.html
+- file: personal-info.html
+- file: delivery-address.html
 - file: frequency.html
-  ready: 50
-- file: checkout.html
-  ready: 50
 - file: bin-type.html
-  ready: 50  
+- file: checkout.html
+- file: checkout-referral.html

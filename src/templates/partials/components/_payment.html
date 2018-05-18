@@ -1,0 +1,61 @@
+<div class="payment">
+	<div class="title-md payment__title">Set up Payment Method</div>
+	<div class="payment__header">
+		<div class="payment__subtitle">Credit Card</div>
+		<div class="payment__icons">
+			<img src="img/master-card.svg" alt="Master Card" class="payment__icon">
+			<img src="img/visa.svg" alt="Visa" class="payment__icon">
+			<img src="img/amex.svg" alt="Amex" class="payment__icon">
+		</div>
+	</div>
+	<div class="payment__description">We use <strong>Stripe</strong> to safely and securely charge your credit card. They are PCI compliant and the best at what they do</div>
+	<div class="payment__form">
+		<div class="grid">
+			{% for row in [
+				[
+					{
+						classList: 'grid__col_100',
+						fieldOptions: { input: true, placeholder: 'Card Number', icon: 'card' }
+					}
+				],
+				[
+					{
+						classList: 'grid__col_50 grid__col_sm-100',
+						fieldOptions: { input: true, placeholder: 'Name on Card' }
+					},
+					{
+						classList: 'grid__col_50 grid__col_sm-100',
+						cols: [
+							{
+								classList: 'grid__col_50',
+								fieldOptions: { input: true, placeholder: 'Exp Date', classList: 'is-valid' }
+							},
+							{
+								classList: 'grid__col_50',
+								fieldOptions: { input: true, placeholder: 'CVV', help: true }
+							}
+						]
+					}
+				]
+			] %}
+				<div class="grid__row">
+					{% for col in row %}
+						<div class="grid__col {{col.classList}}">
+							{% if not col.cols %}
+								{{field.call(col.fieldOptions)}}
+							{% else %}
+								<div class="grid__row">
+									{% for innerCol in col.cols %}
+										<div class="grid__col {{innerCol.classList}}">
+											{{field.call(innerCol.fieldOptions)}}
+										</div>
+									{% endfor %}
+								</div>
+							{% endif %}
+						</div>
+					{% endfor %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

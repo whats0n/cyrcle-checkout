@@ -3,8 +3,14 @@
 {% macro call(props) %}
 	{% if props.input %}
 		<div class="field {{props.classList}}">
-			<input type="text" class="field__input" placeholder="{{props.placeholder}}">
+			{% if props.icon %}
+				<img src="img/{{props.icon}}.svg" alt="{{props.icon}}" class="field__icon field__{{props.icon}}">
+			{% endif %}
+			{% if props.help %}
+				<span class="field__icon field__help">?</span>
+			{% endif %}
 			{{mixins.icon('check', 'field__icon field__check')}}
+			<input type="text" class="field__input" placeholder="{{props.placeholder}}">
 		</div>
 	{% endif %}
 {% endmacro %}

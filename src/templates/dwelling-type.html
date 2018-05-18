@@ -1,5 +1,5 @@
 ---
-title: Home
+title: dwelling-type
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -9,6 +9,10 @@ title: Home
 <div class="main">
 	<div class="inner">
 		<div class="wrapper">
+			{% set steps = {
+				active: '1'
+			} %}
+
 			{% include 'partials/components/_steps.html' %}
 
 			<div class="title-md">What type of dwelling do you live in?</div>

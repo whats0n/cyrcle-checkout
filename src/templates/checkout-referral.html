@@ -1,6 +1,6 @@
 ---
-title: checkout
-controls: { disabled: 'disabled', next: 'Start Trial' }
+title: checkout-referral
+controls: { next: 'Start Trial', classList: 'is-active' }
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -11,7 +11,7 @@ controls: { disabled: 'disabled', next: 'Start Trial' }
 	<div class="inner">
 		<div class="wrapper">
 			{% set steps = {
-				active: '3.5'
+				active: '4'
 			} %}
 
 			{% include 'partials/components/_steps.html' %}
@@ -46,7 +46,7 @@ controls: { disabled: 'disabled', next: 'Start Trial' }
 							<span>Bin + Rollcart</span>
 						</div>
 					</div>
-					<div class="text__dropdown aside__box">
+					<div class="text__dropdown aside__box is-active">
 						<div class="text__wrap">
 							<a href="#" class="text__title">Have a Referral Code?</a>
 							{{mixins.icon('arrow-down', 'text__arrow')}}
@@ -58,7 +58,7 @@ controls: { disabled: 'disabled', next: 'Start Trial' }
 							</div>
 						</div>
 					</div>
-					<div class="aside__row text aside__box">
+					<div class="aside__row text">
 						<div class="text__left-col">
 							<span>First Month</span>
 							<span>Bin Delivery</span>
@@ -68,8 +68,10 @@ controls: { disabled: 'disabled', next: 'Start Trial' }
 							<span>Free</span>
 						</div>
 					</div>
+					<hr class="aside__hr">
 				</div>
 			</div>
+
 		</div>
 		<div class="aside__footer price">
 			<div class="price__left">

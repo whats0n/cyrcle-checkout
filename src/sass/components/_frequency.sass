@@ -25,18 +25,31 @@
 		align-items: center
 		justify-content: space-between
 		padding: 15px 0
-		border-top: 1px solid $light-grey
-		border-bottom: 1px solid $light-grey
 		line-height: 1.71
 		font-size: 15px
 		color: $bluey-grey
 		margin-bottom: 17px
-		span:first-child
-			margin-right: 15px
-		.icon-arrow-down
-			padding-top: 5px
-			fill: #1b2125
-			width: 12px	
+		&.is-active
+			.text__arrow
+				transform: translateY(-7px)
+			.text__apply
+				display: block
+	&__title
+		display: block
+		text-decoration: none
+		color: $bluey-grey-two
+	&__apply
+		display: none
+	&__wrap
+		width: 100%
+		position: relative
+	&__arrow
+		position: absolute
+		right: 0
+		line-height: 0
+		bottom: 9px
+		fill: #1b2125
+		font-size: 8px
 
 .price
 	&__left
