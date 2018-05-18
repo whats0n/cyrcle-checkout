@@ -1,0 +1,53 @@
+.text
+	display: flex
+	align-items: center
+	justify-content: space-between
+	line-height: 1.71
+	font-size: 15px
+	color: $bluey-grey
+	&__left-col
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		span
+			text-align: left
+			margin-bottom: 17px
+	&__right-col
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		font-weight: 600
+		span
+			text-align: right
+			margin-bottom: 17px
+	&__dropdown
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 15px 0
+		border-top: 1px solid $light-grey
+		border-bottom: 1px solid $light-grey
+		line-height: 1.71
+		font-size: 15px
+		color: $bluey-grey
+		margin-bottom: 17px
+		span:first-child
+			margin-right: 15px
+		.icon-arrow-down
+			padding-top: 5px
+			fill: #1b2125
+			width: 12px	
+
+.price
+	&__left
+		font-size: 17px
+		line-height: 1.5
+		color: $dark-grey-blue-two
+		text-align: left
+	&__right
+		font-size: 17px
+		line-height: 1.5
+		font-weight: 600
+		text-align: right
+		color: $dark-grey-blue-two
+
