@@ -8,3 +8,4 @@ PageList:
 - file: bin-type.html
 - file: checkout.html
 - file: checkout-referral.html
+- file: success-page.html
