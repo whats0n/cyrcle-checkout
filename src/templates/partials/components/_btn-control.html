@@ -1,6 +1,6 @@
 <!-- begin btn-wrapper -->
 <div class="btn-control">
-	<button class="btn btn-control__prev">{{controls.prev or 'Back'}}</button>
-	<button class="btn btn-control__next {{controls.classList}}" {{controls.disabled | safe}}>{{controls.next or 'Next'}}</button>
+	<a href="{{controls.linkPrev}}" class="btn btn-control__prev" {{controls.disabledPrev | safe}}>{{controls.prev or 'Back'}}</a>
+	<a href="{{controls.linkNext}}" class="btn btn-control__next {{controls.classList}}" {{controls.disabledNext | safe}}>{{controls.next or 'Next'}}</a>
 </div>
 <!-- end btn-wrapper -->
