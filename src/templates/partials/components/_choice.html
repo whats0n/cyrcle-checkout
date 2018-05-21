@@ -4,9 +4,7 @@
 		<div class="choice__wrapper">
 			<input type="radio" name="radio" class="choice__input" id="{{item.id}}">
 			<div class="choice__item {{item.itemClassList}}">
-				{% if item.selected %}
-					<div class="choice__selected">selected</div>
-				{% endif %}
+				<div class="choice__selected">selected</div>
 				{% if item.img %}
 					<div class="choice__img {{item.imgClassList}}"><img src="img/{{item.img}}.svg" alt="home" class="img"></div>
 				{% endif %}
