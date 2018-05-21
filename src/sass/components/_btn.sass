@@ -10,6 +10,7 @@
 	letter-spacing: 1.2px
 	color: $white
 	text-align: center
+	text-decoration: none
 	text-transform: uppercase
 	transition: color 0.25s, background 0.25s
 	+xs
@@ -26,6 +27,12 @@
 		+hover
 			background: $dusk
 			color: $dark-grey-blue-two
+	&_white
+		background: $white
+		color: $iris
+		&:hover
+			background: $dusk
+			color: $white
 	&.is-active
 		background: $white
 		color: $iris

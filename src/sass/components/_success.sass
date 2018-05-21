@@ -1,0 +1,58 @@
+.success
+	text-align: center
+	padding: 96px 0 90px
+	+sm
+		padding: 50px 0 30px
+	&__circle
+		width: 75px
+		height: 75px
+		margin: 0 auto 40px
+		border-radius: 50%
+		background-color: #fbe7a1
+		+vertical
+	&__img
+		display: inline-block
+		vertical-align: middle
+
+.success-list
+	font-size: 0
+	margin: 0 -15px
+	padding: 90px 0 100px
+	+sm
+		padding: 50px 0 30px
+		margin: 0 auto
+		max-width: 250px
+	&__item
+		display: inline-block
+		vertical-align: top
+		width: 33.33%
+		padding: 0 15px
+		+sm
+			padding: 0
+			width: 100%
+			margin-bottom: 30px
+			text-align: center
+	&__circle
+		width: 50px
+		height: 50px
+		margin-bottom: 16px
+		border-radius: 50%
+		background-color: $dusk
+		+vertical
+		+sm
+			margin: 0 auto 15px
+	&__img
+		display: inline-block
+		vertical-align: middle
+	&__title
+		color: $white
+		margin-bottom: 17px
+		+f(18px, null, 24px)
+	&__text
+		+f(15px, null, 24px)
+		color: #ceceda
+		a
+			color: #ffa27b
+			text-decoration: none
+			&:hover
+				text-decoration: underline

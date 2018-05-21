@@ -1,0 +1,33 @@
+---
+title: success-page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<!-- begin main -->
+<div class="main">
+	<div class="inner">
+		<div class="success">
+			<div class="success__circle"><img src="img/trophy.svg" alt="trophy" class="success__img"></div>
+			<div class="title-md success__title">Congrats! Your trial has started</div>
+			<a href="#" class="btn btn_white">login to dashboard</a>
+		</div>
+		<ul class="success-list">
+			{% for item in [
+					{img: 'clipboard', title: 'Your bin is on its way', text: 'Your bin will be dropped off on our next route in your area. Keep your eye out for it.'},
+					{img: 'speed', title: 'Visit the Dashboard', text: 'Login to our <a href="#">Dashboard</a> to see your environmental impact, set up notifications, and manage billing.'},
+					{img: 'package', title: 'Review our Checklist', text: 'Make sure you are ready to be a rockstar composter. Review our <a href="#">Getting Started Checklist.</a>'}
+				] %}
+				<li class="success-list__item">
+					<div class="success-list__circle"><img src="img/{{item.img}}.svg" alt="{{item.img}}" class="success-list__img"></div>
+					<div class="success-list__title">{{item.title}}</div>
+					<div class="success-list__text">{{item.text | safe}}</div>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+<!-- end main -->
+
+{% endblock %}
