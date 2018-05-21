@@ -20,8 +20,6 @@
 		padding: 25px 35px 55px
 		margin-bottom: 30px
 		min-height: 348px
-		&_indent
-			padding-bottom: 40px
 		+lg
 			padding-top: 35px
 		+xxs
@@ -38,11 +36,31 @@
 			box-shadow: 0 1px 5px 0 rgba($black, .2)
 			transform: scale(1)
 			transition: transform .24s, background .24s, border-radius .24s
+		&:hover
+			&:before
+				border-radius: 6px
+				background: $white
+			.choice__title
+				color: $dark-grey-blue-two
+			.choice__price
+				color: $dark-mint
+			.choice__label
+				color: $dark-mint
+			.choice__description
+				color: $bluey-grey-two
+			.choice__number
+				background: $twilight-two
+				span
+					color: $white
+			.choice__month
+				color: $bluey-grey-two
+		&_indent
+			padding-bottom: 40px
 	&__selected
 		position: absolute
 		left: 0
 		right: 0
-		top: 5px
+		top: -5px
 		letter-spacing: 1.2px
 		text-transform: uppercase
 		opacity: 0
@@ -92,6 +110,7 @@
 		+f(16px, 600, 1.5)
 		text-transform: uppercase
 		letter-spacing: 1.3px
+		transition: color .24s
 	&__description
 		position: relative
 		+f(15px, null, 1.87)
