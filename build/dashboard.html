@@ -19,8 +19,40 @@
               <use xlink:href="img/sprite.svg#icon-logo"></use>
             </svg>
           </a>
+          <div class="menu">
+            <button class="menu__control js-nav-control">
+              <svg class="icon icon-arrow-down menu__arrow">
+                <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+            <div class="menu__dropdown js-nav">
+              <div class="menu__dropdown-in">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Profile</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Billing</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Reminders</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Sign Out</a>
+                  </li>
+                </ul>
+                <div class="menu__footer">
+                  <div class="menu__label">Food Saved</div>
+                  <div class="menu__value">312 lbs</div>
+                  <div class="menu__progressbar">
+                    <div class="menu__progress" style="width: 73%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="profile">
-            <div class="profile__container">
+            <a href="#" class="profile__container">
               <div class="profile__img" style="background-image: url(img/avatar.png);"></div>
               <div class="profile__content">
                 <div class="profile__title">Andrew Eddy</div>
@@ -31,41 +63,40 @@
                   <span>Decatur</span>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="menu">
-            <button class="control__control">
-              <svg class="icon icon-arrow-down ">
-                <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
-              </svg>
-            </button>
-            <div class="menu__dropdown">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Profile</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Billing</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Reminders</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Sign Out</a>
-                </li>
-              </ul>
-              <div class="menu__footer">
-                <div class="menu__label">Food Saved</div>
-                <div class="menu__value">312 lbs</div>
-                <div class="menu__progressbar">
-                  <div class="menu__progress"></div>
-                </div>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
       </header>
       <!-- end header -->
+      <!-- begin hero -->
+      <div class="hero">
+        <div class="hero__inner">
+          <div class="hero__total">
+            <div class="graphic hero__graphic">
+              <img src="img/graphic.svg" alt="Graphic" class="graphic__img">
+              <div class="graphic__content">
+                <div class="graphic__value">312 lbs</div>
+                <div class="graphic__label">TOTAL LBS</div>
+              </div>
+            </div>
+            <ul class="hero__items">
+              <li class="hero__item">
+                <div class="hero__value">21</div>
+                <div class="hero__label">PICKUPS</div>
+              </li>
+              <li class="hero__item">
+                <div class="hero__value">92</div>
+                <div class="hero__label">DAYS</div>
+              </li>
+              <li class="hero__item">
+                <div class="hero__value">515</div>
+                <div class="hero__label">SCRAP POINTS</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end hero -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

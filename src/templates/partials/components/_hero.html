@@ -1,0 +1,27 @@
+<!-- begin hero -->
+<div class="hero">
+	<div class="hero__inner">
+		<div class="hero__total">
+			<div class="graphic hero__graphic">
+				<img src="img/graphic.svg" alt="Graphic" class="graphic__img">
+				<div class="graphic__content">
+					<div class="graphic__value">312 lbs</div>
+					<div class="graphic__label">TOTAL LBS</div>
+				</div>
+			</div>
+			<ul class="hero__items">
+				{% for item in [
+					{ label: 'PICKUPS', value: '21' },
+					{ label: 'DAYS', value: '92' },
+					{ label: 'SCRAP POINTS', value: '515' }
+				] %}
+					<li class="hero__item">
+						<div class="hero__value">{{item.value}}</div>
+						<div class="hero__label">{{item.label}}</div>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end hero -->
