@@ -12,7 +12,7 @@
 			{% if form.link %}
 				<a href="#" class="form__link">Forgot password?</a>
 			{% endif %}
-			<a href="#" class="btn btn_green {{form.btnClassList}}">{{form.btn}}</a>
+			<a href="{{form.btnLink or '#'}}" class="btn btn_green {{form.btnClassList}}">{{form.btn}}</a>
 		</div>
 	</form>
 </div>

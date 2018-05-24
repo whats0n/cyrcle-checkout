@@ -1,7 +1,7 @@
 <!-- begin header -->
 <header class="header">
 	<div class="header__inner">
-		<a href="#" class="header__logo">
+		<a href="dashboard.html" class="header__logo">
 			{{mixins.icon('logo', 'header__logo-icon')}}
 		</a>
 		<div class="menu">
@@ -12,13 +12,13 @@
 				<div class="menu__dropdown-in">
 					<ul class="menu__list">
 						{% for item in [
-							{ title: 'Profile' },
-							{ title: 'Billing' },
-							{ title: 'Reminders' },
-							{ title: 'Sign Out' }
+							{ title: 'Profile', link: 'profile.html' },
+							{ title: 'Billing', link: 'cc-info.html' },
+							{ title: 'Reminders', link: 'reminder-notification.html' },
+							{ title: 'Sign Out', link: 'login.html' }
 						] %}
 							<li class="menu__item">
-								<a href="#" class="menu__link">{{item.title}}</a>
+								<a href="{{item.link or '#'}}" class="menu__link">{{item.title}}</a>
 							</li>
 						{% endfor %}
 					</ul>

@@ -6,7 +6,7 @@
 				number: '4X',
 				title: 'Current Plan',
 				description: 'Last pickup on 4/15/2018',
-				link: { title: 'Change Plan' },
+				link: { title: 'Change Plan', href: 'change-plan.html' },
 				sticker: 'Weekly'
 			},
 			{
@@ -19,7 +19,7 @@
 				icon: 'notifications-simple',
 				title: 'Reminder Notifications',
 				description: 'Do you want a text or email reminder?',
-				link: { title: 'Add Notifications' }
+				link: { title: 'Add Notifications', href: 'reminder-notification.html' }
 			}
 		] %}
 			<div class="boxes__col">
@@ -42,7 +42,7 @@
 						<div class="box__description">
 							<p>{{item.description}}</p>
 							{% if item.link %}
-								<p><a href="#">{{item.link.title}}</a></p>
+								<p><a href="{{item.link.href}}">{{item.link.title}}</a></p>
 							{% endif %}
 						</div>
 					</div>
