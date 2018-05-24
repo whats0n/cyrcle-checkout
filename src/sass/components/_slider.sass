@@ -93,6 +93,8 @@
 		&.active
 			span
 				background: $dark-mint
+				+purple
+					background: $dusk
 		span
 			width: 8px
 			height: 8px
@@ -101,6 +103,8 @@
 			border: 1px solid $dark-mint
 			border-radius: 50%
 			transition: background .24s
+			+purple
+				border-color: $dusk
 	&__arrow
 		position: absolute
 		top: 50%
@@ -131,6 +135,11 @@
 			right: 10px
 		span
 			+arr(10, 14, #515E7F, r)
+	&__btn
+		+purple
+			background: $dusk
+		+purpleHover
+			color: $dusk
 
 @keyframes floating
 	0%

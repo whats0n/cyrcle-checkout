@@ -1,0 +1,56 @@
+.color-switcher
+	width: 82px
+	height: 31px
+	&__btn
+		position: absolute
+		top: 50%
+		width: 50%
+		height: 100%
+		transform: translateY(-50%)
+		&:first-child
+			left: 0
+			.color-switcher
+				&__icon
+					border-radius: 5px 0 0 5px
+		&:last-child
+			right: 0
+			.color-switcher
+				&__icon
+					border-radius: 0 5px 5px 0
+		input
+			display: none
+			&:checked ~ .color-switcher
+				&__icon
+					height: 37px
+					background: $white
+					box-shadow: 4px 0 8px 0 rgba($black,0.06)
+					&:before
+						width: 17px
+						height: 17px
+	&__green
+		.color-switcher__icon
+			&:before
+				background: $dark-mint
+	&__purple
+		.color-switcher__icon
+			&:before
+				background: $iris
+	&__icon
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+		display: block
+		width: 100%
+		height: 100%
+		background: #ECECEC
+		transform: translateY(-50%)
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			border-radius: 50%
+			width: 13px
+			height: 13px
+			transform: translate3d(-50%,-50%,0)

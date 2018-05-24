@@ -50,3 +50,12 @@
     font-weight: $font-weight
   @if $line-height != null
     line-height: $line-height
+
+=purple
+  [data-theme="purple"] &
+    @content
+
+=purpleHover
+  [data-theme="purple"].no-touch &
+    &:hover
+      @content
