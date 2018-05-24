@@ -1,0 +1,21 @@
+<!-- begin footer -->
+<footer class="footer">
+	<div class="footer__inner">
+		<div class="footer__nav">
+			{% for item in [
+				{ label: 'Resources', value: 'Compost Guide' },
+				{ label: 'About us', value: 'Worm Tales' },
+				{ label: 'Support', value: 'Contact us' }
+			] %}
+				<div class="footer__col">
+					<div class="footer__subtitle">{{item.label}}</div>
+					<div class="footer__item">
+						<a href="#" class="footer__link">{{item.value}}</a>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="footer__copy">Cyrcle Inc 2018</div>
+	</div>
+</footer>
+<!-- end footer -->

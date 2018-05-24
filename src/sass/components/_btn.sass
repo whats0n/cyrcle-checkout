@@ -34,19 +34,19 @@
 	&_white
 		background: $white
 		color: $iris
-		&:hover
+		+hover
 			background: $dusk
 			color: $white
 	&_white-green
 		background: $white
 		color: $dark-mint
-		&:hover
+		+hover
 			background: $dark-mint
 			color: $white
 	&_green
 		background: $dark-mint
 		color: $white
-		&:hover
+		+hover
 			background: $white
 			color: $dark-mint
 	&_wide
@@ -56,3 +56,24 @@
 			padding-left: 10px
 			padding-right: 10px
 			font-size: 13px
+	&_img 
+		padding: 0 38px
+		height: 40px
+		color: $iris
+		background: $white
+		+vertical 
+		+xxs
+			padding-left: 20px
+			padding-right: 20px
+		+hover
+			background: #f1f1f1
+	&__facebook,
+	&__nextdoor
+		display: inline-block
+		vertical-align: middle
+		+f(16px, 700, 1)
+		letter-spacing: 0
+	&__facebook
+		height: 17px
+	&__nextdoor
+		height: 13px
