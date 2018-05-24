@@ -22,6 +22,47 @@
 				{% endfor %}
 			</ul>
 		</div>
+		<div class="sm-info hero__sm-info">
+			<ul class="sm-info__list">
+				{% for item in [
+					{
+						icon: 'speed-simple',
+						title: '2,850 Miles Driven',
+						description: 'That is the same as not driving your car for 5 weeks'
+					},
+					{
+						icon: 'tomato',
+						title: '275 tomatos grown',
+						description: 'Imagine all the delicous tomatos people could be eating'
+					},
+					{
+						icon: 'tree',
+						title: '310 lbs of Compost',
+						description: 'This could go straight back to the local food system'
+					}
+				] %}
+					<li class="sm-info__item">
+						<div class="sm-info__icon">
+							<img src="img/{{item.icon}}.svg" alt="{{item.icon}}" class="sm-info__img">
+						</div>
+						<div class="sm-info__title">{{item.title}}</div>
+						<div class="sm-info__description">{{item.description}}</div>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="main-address hero__main-address">
+			<div class="main-address__container">
+				<div class="main-address__content">
+					<div class="main-address__icon">
+						<img src="img/home-simple.svg" alt="Build" class="main-address__img">
+					</div>
+					<div class="main-address__title">934 St Charles Ave NE</div>
+					<div class="main-address__meta">Atlanta, Ga, 30306</div>
+				</div>
+				<div class="main-address__map js-map"></div>
+			</div>
+		</div>
 	</div>
 </div>
 <!-- end hero -->

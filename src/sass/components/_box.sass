@@ -1,0 +1,82 @@
+.box
+	position: relative
+	padding: 25px 42px 20px 77px
+	border-radius: 4px
+	width: 100%
+	min-height: 125px
+	background: $white
+	box-shadow: 0 4px 8px rgba($black, .06)
+	+xs
+		padding-left: 70px
+		min-height: auto
+	&__icon
+		position: absolute
+		top: 24px
+		left: 19px
+		border-radius: 50%
+		width: 40px
+		height: 40px
+		background: #FFF2E9
+		+vertical
+		+xs
+			left: 16px
+	&__number
+		display: inline-block
+		vertical-align: middle
+		padding: 9px 3px 8px
+		color: #FFA27B
+		+f(16px, 600, 23px)
+	&__figure
+		display: inline-block
+		vertical-align: middle
+		&_notifications-simple
+			height: 25px
+	&__title
+		margin-bottom: 3px
+		color: $dark-grey-blue-two
+		+f(18px, 600, 24px)
+		+xs
+			+f(14px, null, 1.5)
+	&__description
+		color: $bluey-grey-two
+		+f(15px, 400, 24px)
+		+xs 
+			+f(13px, null, 1.5)
+		a 
+			color: $iris
+			font-weight: 600
+			text-decoration: none
+			+hover 
+				text-decoration: underline
+	&__img 
+		position: absolute
+		top: 50%
+		right: 24px
+		margin-top: -26px
+		height: 53px
+		+xs 
+			height: 40px
+		~ .box__content
+			padding-right: 70px
+			+xs 
+				padding-right: 30px
+	&__sticker
+		position: absolute
+		top: 23px
+		right: 16px
+		padding: 3px 3px 2px
+		border-radius: 3px
+		width: 88px
+		color: $white
+		background: $iris
+		+f(12px, 700, 17px)
+		letter-spacing: 1px
+		text-align: center
+		text-transform: uppercase
+		+xs 
+			width: 60px
+			+f(10px, null, 1.4)
+		~ .box__content
+			padding-right: 76px
+			+xs
+				padding-right: 40px

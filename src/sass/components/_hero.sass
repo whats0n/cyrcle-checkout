@@ -6,13 +6,29 @@
 		margin: 0 auto
 		max-width: 1300px
 		font-size: 0
-	&__total
+	&__total,
+	&__sm-info,
+	&__main-address
 		display: inline-block
 		vertical-align: top
 		padding: 24px 16px
 		width: 33.33%
+		+sm 
+			padding-left: 20px
+			padding-right: 20px
+	&__total,
+	&__sm-info
+		+md 
+			width: 50%
+		+sm 
+			width: 100%
+	&__main-address
+		+md 
+			width: 100%
 	&__graphic
 		margin-bottom: 68px
+		+xs
+			margin-bottom: 30px
 	&__items
 		margin: 0 -14px
 	&__item
@@ -23,6 +39,8 @@
 		width: 33.33%
 		color: $white
 		text-align: center
+		+xs 
+			padding: 14px 0
 		&:not(:last-child)
 			&:before
 				content: ''
@@ -37,6 +55,10 @@
 		opacity: 0.9
 		+f(32px, 600, 50px)
 		letter-spacing: -0.67px
+		+xs
+			+f(24px, null, 1.4)
 	&__label
 		opacity: 0.75
 		+f(16px, 400, 29px)
+		+xs 
+			+f(11px, null, 1.4)

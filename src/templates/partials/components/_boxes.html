@@ -1,0 +1,54 @@
+<!-- begin boxes -->
+<div class="boxes">
+	<div class="boxes__row">
+		{% for item in [
+			{
+				number: '4X',
+				title: 'Current Plan',
+				description: 'Last pickup on 4/15/2018',
+				link: { title: 'Change Plan' },
+				sticker: 'Weekly'
+			},
+			{
+				icon: 'calendar-simple',
+				title: 'Saturday Pickup',
+				description: 'Your next pickup is on the morning of May 17th',
+				img: 'calendar-number'
+			},
+			{
+				icon: 'notifications-simple',
+				title: 'Reminder Notifications',
+				description: 'Do you want a text or email reminder?',
+				link: { title: 'Add Notifications' }
+			}
+		] %}
+			<div class="boxes__col">
+				<div class="box">
+					<div class="box__icon">
+						{% if item.number %}
+							<div class="box__number">{{item.number}}</div>
+						{% else %}
+							<img src="img/{{item.icon}}.svg" alt="{{item.icon}}" class="box__figure box__figure_{{item.icon}}">
+						{% endif %}
+					</div>
+					{% if item.img %}
+						<img src="img/{{item.img}}.svg" alt="{{item.img}}" class="box__img">
+					{% endif %}
+					{% if item.sticker %}
+						<div class="box__sticker">{{item.sticker}}</div>
+					{% endif %}
+					<div class="box__content">
+						<div class="box__title">{{item.title}}</div>
+						<div class="box__description">
+							<p>{{item.description}}</p>
+							{% if item.link %}
+								<p><a href="#">{{item.link.title}}</a></p>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+<!-- end boxes -->
