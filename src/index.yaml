@@ -9,3 +9,4 @@ PageList:
 - file: checkout.html
 - file: checkout-referral.html
 - file: success-page.html
+- file: dashboard.html

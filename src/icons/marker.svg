@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="11px" viewBox="0 0 9 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>marker</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03---Dashboard" transform="translate(-1186.000000, -48.000000)" fill="#59C78A" fill-rule="nonzero">
+            <g id="Group" transform="translate(1122.000000, 18.000000)">
+                <g id="Profile">
+                    <g id="Location" transform="translate(64.000000, 26.000000)">
+                        <g id="Icons/Geo" transform="translate(0.000000, 4.000000)">
+                            <g id="marker">
+                                <g>
+                                    <path d="M4.5,0 C2.291,0 0.5,1.791 0.5,4 C0.5,7 4,8 4,10 C4,10.276 4.224,10.5 4.5,10.5 C4.776,10.5 5,10.276 5,10 C5,8 8.5,7 8.5,4 C8.5,1.791 6.709,0 4.5,0 Z M4.5,5 C3.9475,5 3.5,4.5525 3.5,4 C3.5,3.4475 3.9475,3 4.5,3 C5.0525,3 5.5,3.4475 5.5,4 C5.5,4.5525 5.0525,5 4.5,5 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

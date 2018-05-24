@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="244px" height="172px" viewBox="0 0 244 172" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>graphic</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="14.0971667%" y1="1.82093025%" x2="64.7341953%" y2="79.2207166%" id="linearGradient-1">
+            <stop stop-color="#F5F9FC" offset="0%"></stop>
+            <stop stop-color="#F7FAFC" offset="24.9322385%"></stop>
+            <stop stop-color="#F0F3FA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="03---Dashboard" transform="translate(-166.000000, -129.000000)" stroke-width="10">
+            <g id="Group-3" transform="translate(141.000000, 134.000000)">
+                <g id="Group-14">
+                    <g id="Graphics" transform="translate(30.000000, 0.355556)">
+                        <g id="graphic">
+                            <path d="M228.347192,160.48 C232.016646,148.508887 234,135.73125 234,122.462337 C234,91.3583943 226.101661,66.9539731 208.133816,45.3096682 C207.433216,44.4657171 206.721869,43.6320437 206,42.8088889" id="Oval-" stroke="#F6FBFD" opacity="0.2"></path>
+                            <path d="M196,32.6110726 C175.183532,12.365938 147.375968,0 116.830515,0 C52.3068031,0 0,55.178845 0,123.2454 C0,136.610127 2.01655852,149.478 5.74620687,161.528889" id="Oval-" stroke="url(#linearGradient-1)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

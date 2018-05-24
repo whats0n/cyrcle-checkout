@@ -1,0 +1,29 @@
+<svg width="42" height="31" viewBox="0 0 42 31" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>
+        eggs
+    </title>
+    <defs>
+        <linearGradient x1="-.153%" y1="50.039%" x2="99.726%" y2="50.039%" id="a">
+            <stop stop-color="#FFD6AC" offset="0%"/>
+            <stop stop-color="#FFE4C3" offset="54.63%"/>
+            <stop stop-color="#FFEDD2" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1=".205%" y1="50.039%" x2="100.084%" y2="50.039%" id="d">
+            <stop stop-color="#FFD6AC" offset="0%"/>
+            <stop stop-color="#FFE4C3" offset="54.63%"/>
+            <stop stop-color="#FFEDD2" offset="100%"/>
+        </linearGradient>
+        <ellipse id="c" cx="11.97" cy="14.882" rx="11.97" ry="14.882"/>
+        <filter x="-14.6%" y="-15.1%" width="158.5%" height="130.2%" filterUnits="objectBoundingBox" id="b">
+            <feMorphology radius="2.5" in="SourceAlpha" result="shadowSpreadOuter1"/>
+            <feOffset dx="6" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.108950408 0" in="shadowBlurOuter1"/>
+        </filter>
+    </defs>
+    <g transform="translate(0 .592)" fill-rule="nonzero" fill="none">
+        <ellipse fill="url(#a)" transform="rotate(90 26.88 17.31)" cx="26.88" cy="17.31" rx="11.97" ry="14.882"/>
+        <use fill="#000" filter="url(#b)" xlink:href="#c"/>
+        <use fill="url(#d)" fill-rule="evenodd" xlink:href="#c"/>
+    </g>
+</svg>

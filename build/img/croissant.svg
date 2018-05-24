@@ -1,0 +1,48 @@
+<svg width="54" height="20" viewBox="0 0 54 20" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        croissant
+    </title>
+    <defs>
+        <linearGradient x1=".081%" y1="49.71%" x2="99.979%" y2="49.71%" id="a">
+            <stop stop-color="#F5A96D" offset="0%"/>
+            <stop stop-color="#F5A56D" offset="26.04%"/>
+            <stop stop-color="#F59A6D" offset="50.83%"/>
+            <stop stop-color="#F58A6D" offset="71.43%"/>
+        </linearGradient>
+        <linearGradient x1=".196%" y1="50.131%" x2="100.114%" y2="50.131%" id="b">
+            <stop stop-color="#FFEDD2" offset="0%"/>
+            <stop stop-color="#FFE4C3" offset="45.37%"/>
+            <stop stop-color="#FFD6AC" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1=".075%" y1="49.71%" x2="99.619%" y2="49.71%" id="c">
+            <stop stop-color="#F5A96D" offset="0%"/>
+            <stop stop-color="#F5A56D" offset="26.04%"/>
+            <stop stop-color="#F59A6D" offset="50.83%"/>
+            <stop stop-color="#F58A6D" offset="71.43%"/>
+        </linearGradient>
+        <linearGradient x1=".088%" y1="50.131%" x2="100.006%" y2="50.131%" id="d">
+            <stop stop-color="#FFEDD2" offset="0%"/>
+            <stop stop-color="#FFE4C3" offset="45.37%"/>
+            <stop stop-color="#FFD6AC" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="-.073%" y1="50.1%" x2="99.83%" y2="50.1%" id="e">
+            <stop stop-color="#F5A96D" offset="0%"/>
+            <stop stop-color="#F5A56D" offset="26.04%"/>
+            <stop stop-color="#F59A6D" offset="50.83%"/>
+            <stop stop-color="#F58A6D" offset="71.43%"/>
+        </linearGradient>
+        <linearGradient x1="-.422%" y1="49.879%" x2="100.168%" y2="49.879%" id="f">
+            <stop stop-color="#FFEDD2" offset="0%"/>
+            <stop stop-color="#FFE4C3" offset="45.37%"/>
+            <stop stop-color="#FFD6AC" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill-rule="nonzero" fill="none">
+        <path d="M19.338 13.083c-1.821.87-15.524 4.257-16.77 4.257-1.054 0-3.737-.774-1.629-5.322.384-.774.863-1.741 1.63-2.709C7.358 2.247 16.558.118 16.558.118s1.725 4.547 2.587 8.32c.575 2.323.862 4.258.192 4.645z" fill="url(#a)" transform="translate(.492 2.298)"/>
+        <path d="M19.146 8.342c-2.3.967-15.428 4.16-16.578 4.16-.383 0-1.054-.097-1.629-.58.384-.774.863-1.742 1.63-2.71 4.79-7.062 13.99-9.19 13.99-9.19s1.725 4.547 2.587 8.32z" fill="url(#b)" transform="translate(.492 2.298)"/>
+        <path d="M.575 13.083c1.82.87 15.524 4.257 16.77 4.257 1.053 0 3.736-.774 1.628-5.322-.383-.774-.862-1.741-1.629-2.709C12.553 2.247 3.354.118 3.354.118S1.629 4.665.767 8.438c-.671 2.323-.959 4.258-.192 4.645z" fill="url(#c)" transform="translate(33.82 2.298)"/>
+        <path d="M.67 8.342c2.3.967 15.429 4.16 16.578 4.16.384 0 1.055-.097 1.63-.58-.384-.774-.863-1.742-1.63-2.71C12.458 2.15 3.258.023 3.258.023S1.629 4.568.671 8.341z" fill="url(#d)" transform="translate(33.82 2.298)"/>
+        <path d="M38.886 6.02v4.354c0 3.29-2.683 5.998-5.941 5.998H20.583c-3.258 0-5.94-2.709-5.94-5.998V6.02v-.194c.095-3.192 2.682-5.805 5.94-5.805h12.362c3.162 0 5.845 2.613 5.941 5.805v.194z" fill="url(#e)" transform="translate(.492 .363)"/>
+        <path d="M38.79 5.826c0 .678-.096 1.258-.383 1.839-.767 2.322-2.97 3.966-5.558 3.966H20.583c-2.587 0-4.79-1.644-5.557-3.966a5.683 5.683 0 0 1-.288-1.839C14.834 2.634 17.421.021 20.68.021h12.362c3.066 0 5.653 2.613 5.75 5.805z" fill="url(#f)" transform="translate(.492 .363)"/>
+    </g>
+</svg>

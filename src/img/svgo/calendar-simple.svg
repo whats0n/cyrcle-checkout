@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="23px" viewBox="0 0 22 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>calendar-simple</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03---Dashboard" transform="translate(-548.000000, -633.000000)">
+            <g id="Group-11" transform="translate(89.000000, 602.000000)">
+                <g id="Group" transform="translate(450.000000, 22.000000)">
+                    <g id="calendar-simple" transform="translate(9.000000, 9.000000)">
+                        <g id="Calendar">
+                            <path d="M21.4,4.40395028 C21.4,3.51497568 20.6847284,2.8 19.8023963,2.8 L2.19760372,2.8 C1.31598308,2.8 0.6,3.518113 0.6,4.40395028 L0.6,20.7960497 C0.6,21.6850243 1.31527156,22.4 2.19760372,22.4 L19.8023963,22.4 C20.6840169,22.4 21.4,21.681887 21.4,20.7960497 L21.4,4.40395028 Z" id="Shape" fill="#FFCCA5" fill-rule="nonzero"></path>
+                            <path d="M21.4,8.8 L21.4,4.40000808 C21.4,3.51778052 20.6847284,2.8 19.8023963,2.8 L2.19760372,2.8 C1.31598308,2.8 0.6,3.51634804 0.6,4.40000808 L0.6,8.8 L21.4,8.8 Z" id="Shape" fill="#FFA27B" fill-rule="nonzero"></path>
+                            <path d="M5,1.20341208 C5,0.75969984 5.35930424,0.4 5.79916524,0.4 L6.60083476,0.4 C7.04220152,0.4 7.4,0.76078016 7.4,1.20341208 L7.4,4.39658792 C7.4,4.84030016 7.04069576,5.2 6.60083476,5.2 L5.79916524,5.2 C5.35779848,5.2 5,4.83921984 5,4.39658792 L5,1.20341208 Z M14.6,1.20341208 C14.6,0.75969984 14.9593042,0.4 15.3991652,0.4 L16.2008348,0.4 C16.6422015,0.4 17,0.76078016 17,1.20341208 L17,4.39658792 C17,4.84030016 16.6406958,5.2 16.2008348,5.2 L15.3991652,5.2 C14.9577985,5.2 14.6,4.83921984 14.6,4.39658792 L14.6,1.20341208 Z" id="Shape" fill="#FFCCA5" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
