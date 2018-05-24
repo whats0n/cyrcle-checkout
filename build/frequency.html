@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>frequency</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+  <body>
+    <!-- BEGIN content -->
+    <div class="out ">
+      <!-- begin main -->
+      <div class="main">
+        <div class="inner">
+          <div class="wrapper">
+            <!-- begin steps -->
+            <div class="steps" data-steps-active="2.5">
+              <ul class="steps__lines">
+                <li class="steps__line" data-steps-line="1"></li>
+                <li class="steps__line" data-steps-line="2"></li>
+                <li class="steps__line" data-steps-line="3"></li>
+              </ul>
+              <ul class="steps__controls">
+                <li class="steps__control" data-steps-control="1">
+                  <span class="steps__circle">
+                    <svg class="icon icon-check steps__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                </li>
+                <li class="steps__control" data-steps-control="2">
+                  <span class="steps__circle">
+                    <svg class="icon icon-check steps__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                </li>
+                <li class="steps__control" data-steps-control="3">
+                  <span class="steps__circle">
+                    <svg class="icon icon-check steps__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                </li>
+                <li class="steps__control" data-steps-control="4">
+                  <span class="steps__circle">
+                    <svg class="icon icon-check steps__icon">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <!-- end steps -->
+            <div class="title-md">How often do you want us to pickup?</div>
+            <!-- begin choice -->
+            <div class="choice">
+              <div class="choice__wrapper">
+                <input type="radio" name="radio" class="choice__input" id="item-0">
+                <div class="choice__item choice__item_indent">
+                  <div class="choice__selected">selected</div>
+                  <div class="choice__number">
+                    <span>4X</span>
+                  </div>
+                  <div class="title-sm choice__title">Weekly</div>
+                  <div class="choice__price">$29</div>
+                  <div class="choice__month">4 pickups per month</div>
+                  <div class="choice__description is-hidden">We will come by every week on the same day to pickup your compost.</div>
+                  <label for="item-0" class="choice__radio"></label>
+                </div>
+              </div>
+              <div class="choice__wrapper">
+                <input type="radio" name="radio" class="choice__input" id="item-1">
+                <div class="choice__item choice__item_indent">
+                  <div class="choice__selected">selected</div>
+                  <div class="choice__number">
+                    <span>2X</span>
+                  </div>
+                  <div class="title-sm choice__title">BI-weekly</div>
+                  <div class="choice__price">$19</div>
+                  <div class="choice__month">2 pickups per month</div>
+                  <div class="choice__description is-hidden">We will come by every other week on the same day to pickup your compost.</div>
+                  <label for="item-1" class="choice__radio"></label>
+                </div>
+              </div>
+            </div>
+            <!-- end choice -->
+            <!-- begin btn-wrapper -->
+            <div class="btn-control">
+              <a href="delivery-address.html" class="btn btn-control__prev">back</a>
+              <a href="bin-type.html" class="btn btn-control__next ">next</a>
+            </div>
+            <!-- end btn-wrapper -->
+          </div>
+        </div>
+      </div>
+      <!-- end main -->
+      <!--aside begin -->
+      <aside class="aside">
+        <div class="aside__container">
+          <div class="aside__wrapper">
+            <div class="aside__head">
+              <h3 class="aside__title title">Compost Plan</h3>
+            </div>
+            <div class="aside__field">
+              <span class="aside__label label">Pickup Type</span>
+              <div class="pickup">
+                <div class="pickup__wrap">
+                  <div class="pickup__image" style="background-image: url(img/green.svg)"></div>
+                  <div class="pickup__text">
+                    <h6 class="pickup__title">Compostable waste</h6>
+                    <p>Turn your scraps into soil</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="aside__field">
+              <span class="aside__label label">Service Address</span>
+              <div class="service-address">
+                <div class="map js-map" data-center-lat="55.753678" data-center-lng="37.621103"></div>
+              </div>
+              <div class="aside__wrap">
+                <div class="aside__row text">
+                  <div class="text__left-col">
+                    <span>Frequency</span>
+                  </div>
+                  <div class="text__right-col">
+                    <span>Bi-Weekly</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="aside__footer price">
+            <div class="price__left">
+              <span>Monthly Fee</span>
+            </div>
+            <div class="price__right">
+              <span>$19/mo</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!--aside end -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMWIxCN9ijYRfiH7bmQN-LNRDtoboLZqY"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+</html>

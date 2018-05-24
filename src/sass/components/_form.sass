@@ -1,0 +1,53 @@
+.form
+	max-width: 430px
+	width: 100%
+	margin: 80px auto 40px
+	background-color: $white
+	border-radius: 5px
+	padding: 55px 44px 64px
+	+sm
+		margin-top: 40px
+	+xxs
+		padding: 30px 15px
+	&__title
+		text-align: center
+		margin-bottom: 9px
+		color: $dark-grey-blue-two
+		+f(32px, null, 1.25)
+		+xxs
+			font-size: 28px
+	&__desc
+		text-align: center
+		color: $bluey-grey-two
+		margin-bottom: 31px
+		+f(15px, null, 1.87)
+		+xxs
+			font-size: 12px
+	&__fields
+		padding-bottom: 8px
+	&__field
+		margin-bottom: 24px
+	&__input
+		height: 40px
+		width: 100%
+		padding: 0 32px 0 15px
+		border: solid 1px #e1e5e9
+		border-radius: 5px
+		font-family: 'Open Sans', ssans-serif
+		color: $dark-grey-blue-three
+		+f(16px, 400, normal)
+		&::placeholder
+			opacity: .5
+			color: #849bb0
+	&__footer
+		+clr
+	&__btn
+		float: right
+	&__link
+		float: left
+		color: $dark-mint
+		padding: 8px 0
+		+f(15px, null, 1.6)
+		text-decoration: none
+		+hover
+			text-decoration: underline

@@ -1,0 +1,24 @@
+---
+title: checkout-referral
+controls: { next: 'save', disabledNext: 'disabled'}
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<!-- begin main -->
+<div class="main">
+	<div class="inner inner_sm">
+		<div class="wrapper">
+			<div class="inner__in">
+				{% set payment = {title: 'Add new Credit Card'} %}
+				{% include 'partials/components/_payment.html' %}
+			</div>
+			{% include 'partials/components/_btn-control.html' %}
+		</div>
+	</div>
+</div>
+<!-- end main -->
+
+
+{% endblock %}

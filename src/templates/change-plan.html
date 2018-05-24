@@ -1,0 +1,50 @@
+---
+title: frequency
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<!-- begin main -->
+<div class="main">
+	<div class="inner">
+		<div class="wrapper">
+			<div class="title-md">Select a new plan</div>
+
+			{% set choice = [
+				{
+					itemClassList: 'choice__item_indent',
+					id: 'item-0',
+					number: '4X',
+					title: 'Weekly',
+					price: '$29',
+					month: '4 pickups per month',
+					description: 'We will come by every week on the same day to pickup your compost.',
+					descriptionClassList: 'is-hidden'
+				},
+				{
+					itemClassList: 'choice__item_indent',
+					id: 'item-1',
+					number: '2X',
+					title: 'BI-weekly',
+					price: '$19',
+					month: '2 pickups per month',
+					description: 'We will come by every other week on the same day to pickup your compost.',
+					descriptionClassList: 'is-hidden'
+				}
+			] %}
+
+			{% include 'partials/components/_choice.html' %}
+
+			{% set controls = {
+				prev: 'exit',
+				next: 'switch plan',
+				disabledNext: 'disabled'
+			} %}
+			{% include 'partials/components/_btn-control.html' %}
+		</div>
+	</div>
+</div>
+<!-- end main -->
+
+{% endblock %}

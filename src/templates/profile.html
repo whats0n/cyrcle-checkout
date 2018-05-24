@@ -1,0 +1,132 @@
+---
+title: profile
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<!-- begin main -->
+<div class="main">
+	<div class="inner inner_sm">
+		<div class="wrapper">
+			<div class="title-md">Account info</div>
+
+			{% set grid = [
+				[
+					{
+						classList: 'grid__col_100',
+						title: 'Email reminder'
+					}
+				],
+				[
+					{
+						classList: 'grid__col_50 grid__col_xs-100',
+						fieldOptions: {
+							classList: 'is-valid',
+							input: true,
+							placeholder: 'Name'
+						}
+					},
+					{
+						classList: 'grid__col_50 grid__col_xs-100',
+						fieldOptions: {
+							classList: 'is-valid',
+							input: true,
+							placeholder: 'Name'
+						}
+					}
+				],
+				[
+					{
+						classList: 'grid__col_50 grid__col_xs-100',
+						fieldOptions: {
+							classList: 'is-valid',
+							input: true,
+							placeholder: 'Phone'
+						}
+					},
+					{
+						classList: 'grid__col_50 grid__col_xs-100',
+						fieldOptions: {
+							classList: 'is-valid',
+							input: true,
+							placeholder: 'Email'
+						}
+					}
+				],
+				[
+					{
+						classList: 'grid__col_100',
+						title: 'Change Password'
+					}
+				],
+				[
+					{
+						classList: 'grid__col_50 grid__col_xs-100',
+						fieldOptions: {
+							input: true,
+							type: 'password',
+							placeholder: 'Current Password'
+						}
+					}
+				],
+				[
+					{
+						classList: 'grid__col_50 grid__col_xs-100',
+						fieldOptions: {
+							input: true,
+							type: 'password',
+							placeholder: 'New Password'
+						}
+					},
+					{
+						classList: 'grid__col_50 grid__col_xs-100',
+						fieldOptions: {
+							input: true,
+							type: 'password',
+							placeholder: 'Confirm New Password'
+						}
+					}
+				]
+			] %}
+
+				<div class="grid">
+					{% for row in grid %}
+						<div class="grid__row">
+							{% for col in row %}
+								<div class="grid__col {{col.classList}}">
+									{% if col.title %}
+										<div class="subtitle">{{col.title}}</div>
+									{% endif %}
+									{% if col.innerCols %}
+										<div class="grid__row">
+											{% for innerCol in col.innerCols %}
+												<div class="grid__col {{innerCol.classList}}">
+													{{field.call(innerCol.fieldOptions)}}
+												</div>
+											{% endfor %}
+										</div>
+									{% else %}
+										{{field.call(col.fieldOptions)}}
+									{% endif %}
+									{% if col.choiceOptions %}
+										{{choiceItem.call(col.choiceOptions)}}
+									{% endif %}
+								</div>
+							{% endfor %}
+						</div>
+					{% endfor %}
+				</div>
+
+			{% set controls = {
+				prev: 'exit',
+				next: 'save',
+				disabledNext: 'disabled'
+			} %}
+			{% include 'partials/components/_btn-control.html' %}
+		</div>
+	</div>
+</div>
+<!-- end main -->
+
+{% endblock %}
