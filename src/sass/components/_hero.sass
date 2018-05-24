@@ -1,0 +1,42 @@
+.hero
+	padding: 30px 0 110px
+	background: #2F8E59
+	background-image: linear-gradient(102deg, #2F8E59 19%, #86E8AB 98%)
+	&__inner
+		margin: 0 auto
+		max-width: 1300px
+		font-size: 0
+	&__total
+		display: inline-block
+		vertical-align: top
+		padding: 24px 16px
+		width: 33.33%
+	&__graphic
+		margin-bottom: 68px
+	&__items
+		margin: 0 -14px
+	&__item
+		position: relative
+		display: inline-block
+		vertical-align: top
+		padding: 14px
+		width: 33.33%
+		color: $white
+		text-align: center
+		&:not(:last-child)
+			&:before
+				content: ''
+				position: absolute
+				top: 27px
+				right: 0
+				bottom: 31px
+				border-left: 1px solid $white
+				opacity: 0.22
+	&__value
+		margin-bottom: 21px
+		opacity: 0.9
+		+f(32px, 600, 50px)
+		letter-spacing: -0.67px
+	&__label
+		opacity: 0.75
+		+f(16px, 400, 29px)

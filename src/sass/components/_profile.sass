@@ -1,0 +1,33 @@
+.profile
+	float: right
+	&__container
+		display: block
+		text-decoration: none
+	&__img
+		float: left
+		border-radius: 50%
+		width: 43px
+		height: 43px
+		+clr
+	&__content
+		overflow: hidden
+		padding-left: 20px
+		+xs
+			display: none
+	&__title
+		margin-bottom: 2px
+		color: $dark-grey-blue-two
+		+f(18px, 600, 24px)
+	&__meta
+		color: $dark-grey-blue-two
+		font-size: 0
+		span 
+			display: block
+			overflow: hidden
+			opacity: 0.42
+			+f(13px, 400, 18px)
+	&__icon
+		float: left
+		margin: 4px 7px 0 0
+		fill: $dark-mint
+		font-size: 11px
