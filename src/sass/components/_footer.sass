@@ -1,0 +1,50 @@
+.footer
+	padding: 90px 20px 65px
+	border-top: 1px solid #E7EDF2
+	background: #F6F9FC
+	+xs
+		padding: 30px 0 50px
+	&__inner
+		margin: 0 auto
+		max-width: 1039px
+		+clr
+		+lg 
+			max-width: none
+		+sm 
+			text-align: center
+	&__copy
+		float: left
+		color: #CFD7DF
+		+f(15px, 400, 24px)
+		letter-spacing: 0.75px
+		+sm 
+			float: none
+			padding-top: 30px
+	&__nav
+		float: right
+		display: flex
+		width: 100%
+		max-width: 405px
+		justify-content: space-between
+		+sm 
+			float: none
+			margin: 0 auto
+		+xs 
+			display: block
+	&__col
+		+f(16px, 400, 24px)
+		+xs 
+			padding: 20px 0
+	&__subtitle
+		margin-bottom: 14px
+		color: #8697A8
+		font-weight: 600
+		letter-spacing: 0.5px
+		+xs
+			margin-bottom: 10px
+	&__link
+		display: block
+		color: #8996A6
+		text-decoration: none
+		+hover
+			text-decoration: underline
