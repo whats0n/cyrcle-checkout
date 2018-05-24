@@ -1,0 +1,141 @@
+.slider
+	margin: 95px auto
+	max-width: 1263px
+	+sm
+		margin: 30px auto
+	&__wrapper
+		padding: 0 84px 35px
+		+sm
+			padding-left: 50px
+			padding-right: 50px
+		+xs
+			padding-left: 20px
+			padding-right: 20px
+	&__item
+		position: relative
+		+clr
+	&__content
+		padding-left: 84px
+		margin-left: 200px
+		+sm
+			padding-left: 0
+			margin-left: 0
+			text-align: center
+	&__box
+		float: left
+		position: relative
+		width: 200px
+		height: 200px
+		+sm
+			float: none
+			margin: 0 auto 20px
+	&__circle
+		position: absolute
+		border-radius: 50%
+		background-color: $white
+		box-shadow: -4px 12px 18px 0 rgba(29, 42, 68, 0.13), 4px -3px 18px 0 rgba(29, 42, 68, 0.07)
+		+vertical
+		animation: floating 7s linear infinite
+		transition: all 2s ease
+		&_lg
+			width: 92px
+			height: 92px
+		&_md
+			width: 74px
+			height: 74px
+		&_sm
+			width: 56px
+			height: 56px
+		&_lt
+			left: 0
+			top: 0
+			animation-duration: 10s
+			transition-delay: .6s
+		&_rt
+			right: 0
+			top: 24px
+			animation-duration: 10s
+			transition-delay: 0s
+		&_lb
+			left: 25px
+			bottom: 20px
+			animation-duration: 5s
+			transition-delay: .7s
+		&_rb
+			right: 12px
+			bottom: 0
+			animation-duration: 7s
+			transition-delay: .7s
+	&__img
+		display: inline-block !important
+		vertical-align: middle
+		width: auto !important
+	&__title
+		margin-bottom: 16px
+		color: #424770
+		+f(24px, null, 1.67)
+	&__desc
+		margin-bottom: 32px
+		color: $bluey-grey-two
+		+f(15px, null, 1.6)
+	&__dots
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		font-size: 0
+		margin: 0 -3px
+		text-align: center
+	&__dot
+		margin: 0 3px
+		display: inline-block
+		vertical-align: top
+		&.active
+			span
+				background: $dark-mint
+		span
+			width: 8px
+			height: 8px
+			display: block
+			background: $white
+			border: 1px solid $dark-mint
+			border-radius: 50%
+			transition: background .24s
+	&__arrow
+		position: absolute
+		top: 50%
+		margin-top: -24px
+		cursor: pointer
+		border-radius: 50%
+		width: 48px
+		height: 48px
+		background: $white
+		box-shadow: 0 2px 4px 0 rgba($black,0.12)
+		+vertical
+		+sm
+			display: none
+		span
+			display: inline-block
+			vertical-align: middle
+	&__prev
+		left: -9px
+		padding-right: 4px
+		+lg
+			left: 10px
+		span
+			+arr(10, 14, #515E7F, l)
+	&__next
+		right: -9px
+		padding-left: 4px
+		+lg
+			right: 10px
+		span
+			+arr(10, 14, #515E7F, r)
+
+@keyframes floating
+	0%
+		-webkit-transform: rotate(0deg) translate(-10px) rotate(0deg)
+		transform: rotate(0deg) translate(-10px) rotate(0deg)
+	100%
+		-webkit-transform: rotate(1turn) translate(-10px) rotate(-1turn)
+		transform: rotate(1turn) translate(-10px) rotate(-1turn)

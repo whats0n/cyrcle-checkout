@@ -1,0 +1,36 @@
+<!-- begin slider -->
+<div class="slider js-slider">
+	{% for item in [
+		{
+			title: 'Compost guide. If it Grows, It goes!',
+			desc: 'We accept most organic and compostable materials. Even bones, meat, and dairy See our 		full list of compostables items we accept.'
+		},
+		{
+			title: 'Compost guide. If it Grows, It goes!',
+			desc: 'We accept most organic and compostable materials. Even bones, meat, and dairy See our 		full list of compostables items we accept.'
+		}
+	] %}
+		<div class="slider__wrapper">
+			<div class="slider__item">
+				<div class="slider__box">
+					{% for circle in [
+						{img: 'lemon', classList: 'slider__circle_md slider__circle_lt'},
+						{img: 'icecream', classList: 'slider__circle_lg slider__circle_rt'},
+						{img: 'croissant', classList: 'slider__circle_md slider__circle_lb'},
+						{img: 'eggs', classList: 'slider__circle_sm slider__circle_rb'}
+					] %}
+						<div class="slider__circle {{circle.classList}}">
+							<img src="img/{{circle.img}}.svg" class="slider__img" alt="img">
+						</div>
+					{% endfor %}
+				</div>
+				<div class="slider__content">
+					<div class="slider__title">{{item.title}}</div>
+					<div class="slider__desc">{{item.desc}}</div>
+					<a href="#" class="btn btn_green slider__btn">check out guide</a>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+</div>
+<!-- end slider -->

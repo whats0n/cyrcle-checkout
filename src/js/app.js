@@ -1,3 +1,4 @@
+import 'owl.carousel2';
 import {DOC, BODY, NO_TOUCH} from './constants';
 
 DOC.ready(() => {
