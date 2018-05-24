@@ -1,0 +1,19 @@
+<!-- begin form -->
+<div class="form">
+	<div class="form__title">{{form.title}}</div>
+	<div class="form__desc">{{form.desc}}</div>
+	<form class="form__fields">
+		{% for item in form.fields %}
+			<div class="form__field">
+				<input type="{{item.type or 'text'}}" class="form__input" placeholder="{{item.placeholder}}">
+			</div>
+		{% endfor %}
+		<div class="form__footer">
+			{% if form.link %}
+				<a href="#" class="form__link">Forgot password?</a>
+			{% endif %}
+			<a href="#" class="btn btn_green {{form.btnClassList}}">{{form.btn}}</a>
+		</div>
+	</form>
+</div>
+<!-- end form -->

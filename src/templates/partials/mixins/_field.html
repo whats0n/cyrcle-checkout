@@ -10,7 +10,7 @@
 				<span class="field__icon field__help">?</span>
 			{% endif %}
 			{{mixins.icon('check', 'field__icon field__check')}}
-			<input type="text" class="field__input" placeholder="{{props.placeholder}}">
+			<input type="{{props.type or 'text'}}" class="field__input" placeholder="{{props.placeholder}}">
 		</div>
 	{% endif %}
 {% endmacro %}

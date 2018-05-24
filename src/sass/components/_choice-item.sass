@@ -1,0 +1,39 @@
+.choice-item
+	margin: 16px 0
+	&__label
+		display: inline-block
+		vertical-align: top
+		position: relative
+		min-width: 54px
+		min-height: 24px
+		cursor: pointer
+	&__input
+		display: none
+		&:checked
+			~ .choice-item__switch
+				background: $dark-mint
+				.choice-item__icon
+					transform: translateX(31px)
+	&__content
+		color: rgba($white, .85)
+		padding-left: 70px
+		display: block
+		+f(16px, null, 1.375)
+	&__switch
+		position: absolute
+		left: 0
+		top: 0
+		width: 54px
+		height: 24px
+		background: #e7edf3
+		border-radius: 20px
+		transition: background .24s
+	&__icon
+		width: 21px
+		height: 21px
+		border-radius: 50%
+		background-color: $white
+		position: absolute
+		left: 1px
+		top: 2px
+		transition: transform .24s

@@ -19,6 +19,9 @@
 	&:hover
 		background: $white
 		color: $iris
+	&.is-active
+		background: $white
+		color: $iris
 	&[disabled],
 	&:disabled
 		background: $dusk
@@ -34,6 +37,22 @@
 		&:hover
 			background: $dusk
 			color: $white
-	&.is-active
+	&_white-green
 		background: $white
-		color: $iris
+		color: $dark-mint
+		&:hover
+			background: $dark-mint
+			color: $white
+	&_green
+		background: $dark-mint
+		color: $white
+		&:hover
+			background: $white
+			color: $dark-mint
+	&_wide
+		width: 100%
+	&_xxs-sm
+		+xxs
+			padding-left: 10px
+			padding-right: 10px
+			font-size: 13px

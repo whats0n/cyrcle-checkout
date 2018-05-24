@@ -90,7 +90,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./components */ \"./components/index.js\");\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2FwcC5qcz8wMzU0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnLi9jb21wb25lbnRzJztcblxuIl0sIm1hcHBpbmdzIjoiOztBQUFBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./app.js\n");
+eval("\n\nvar _constants = __webpack_require__(/*! ./constants */ \"./constants.js\");\n\n_constants.DOC.ready(function () {\n  !('ontouchstart' in window) && _constants.BODY.addClass(_constants.NO_TOUCH);\n  __webpack_require__(/*! ./components */ \"./components/index.js\");\n});\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2FwcC5qcz8wMzU0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7RE9DLCBCT0RZLCBOT19UT1VDSH0gZnJvbSAnLi9jb25zdGFudHMnO1xuXG5ET0MucmVhZHkoKCkgPT4ge1xuICAhKCdvbnRvdWNoc3RhcnQnIGluIHdpbmRvdykgJiYgQk9EWS5hZGRDbGFzcyhOT19UT1VDSCk7XG4gIHJlcXVpcmUoJy4vY29tcG9uZW50cycpO1xufSk7XG4iXSwibWFwcGluZ3MiOiI7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./app.js\n");
 
 /***/ }),
 
@@ -127,6 +127,18 @@ eval("/* WEBPACK VAR INJECTION */(function($) {\n\nObject.defineProperty(exports
 
 "use strict";
 eval("/* WEBPACK VAR INJECTION */(function($) {\n\nvar OPEN = 'is-open';\nvar control = $('.js-nav-control');\nvar container = $('.js-nav');\nvar DOC = $(document);\nvar active = false;\n\ncontrol.on('click', function (e) {\n  e.preventDefault();\n  container.toggleClass(OPEN);\n  active = !active;\n});\n\nDOC.on('click', function (e) {\n  var target = $(e.target);\n  if (!active || target.closest(control).length || target.closest(container).length) return;\n  container.removeClass(OPEN);\n  active = false;\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"../../node_modules/jquery/dist/jquery.js\")))\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL25hdi5qcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9zcmMvanMvY29tcG9uZW50cy9uYXYuanM/ZTBkNCJdLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBPUEVOID0gJ2lzLW9wZW4nO1xuY29uc3QgY29udHJvbCA9ICQoJy5qcy1uYXYtY29udHJvbCcpO1xuY29uc3QgY29udGFpbmVyID0gJCgnLmpzLW5hdicpO1xuY29uc3QgRE9DID0gJChkb2N1bWVudCk7XG5sZXQgYWN0aXZlID0gZmFsc2U7XG5cbmNvbnRyb2wub24oJ2NsaWNrJywgZSA9PiB7XG4gIGUucHJldmVudERlZmF1bHQoKTtcbiAgY29udGFpbmVyLnRvZ2dsZUNsYXNzKE9QRU4pO1xuICBhY3RpdmUgPSAhYWN0aXZlO1xufSk7XG5cbkRPQy5vbignY2xpY2snLCBlID0+IHtcbiAgY29uc3QgdGFyZ2V0ID0gJChlLnRhcmdldCk7XG4gIGlmICghYWN0aXZlIHx8IHRhcmdldC5jbG9zZXN0KGNvbnRyb2wpLmxlbmd0aCB8fCB0YXJnZXQuY2xvc2VzdChjb250YWluZXIpLmxlbmd0aCkgcmV0dXJuO1xuICBjb250YWluZXIucmVtb3ZlQ2xhc3MoT1BFTik7XG4gIGFjdGl2ZSA9IGZhbHNlO1xufSk7XG4iXSwibWFwcGluZ3MiOiI7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0EiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./components/nav.js\n");
+
+/***/ }),
+
+/***/ "./constants.js":
+/*!**********************!*\
+  !*** ./constants.js ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("/* WEBPACK VAR INJECTION */(function($) {\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar NO_TOUCH = exports.NO_TOUCH = 'no-touch';\nvar OPEN = exports.OPEN = 'is-open';\nvar ACTIVE = exports.ACTIVE = 'is-active';\nvar HIDDEN = exports.HIDDEN = 'is-hidden';\nvar DISABLED = exports.DISABLED = 'is-disabled';\nvar OWL = exports.OWL = 'owl-carousel';\n\nvar DOC = exports.DOC = $(document);\nvar BODY = exports.BODY = $('body');\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"../../node_modules/jquery/dist/jquery.js\")))\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb25zdGFudHMuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2NvbnN0YW50cy5qcz85ZDlhIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCBOT19UT1VDSCA9ICduby10b3VjaCc7XG5leHBvcnQgY29uc3QgT1BFTiA9ICdpcy1vcGVuJztcbmV4cG9ydCBjb25zdCBBQ1RJVkUgPSAnaXMtYWN0aXZlJztcbmV4cG9ydCBjb25zdCBISURERU4gPSAnaXMtaGlkZGVuJztcbmV4cG9ydCBjb25zdCBESVNBQkxFRCA9ICdpcy1kaXNhYmxlZCc7XG5leHBvcnQgY29uc3QgT1dMID0gJ293bC1jYXJvdXNlbCc7XG5cbmV4cG9ydCBjb25zdCBET0MgPSAkKGRvY3VtZW50KTtcbmV4cG9ydCBjb25zdCBCT0RZID0gJCgnYm9keScpO1xuIl0sIm1hcHBpbmdzIjoiOzs7OztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./constants.js\n");
 
 /***/ })
 

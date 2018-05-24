@@ -1,0 +1,30 @@
+---
+title: login
+outClassList: 'out_simple'
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<!-- begin main -->
+<div class="main main_simple">
+	{% include 'partials/components/_simple-header.html' %}
+	<div class="inner">
+		{% set form = {
+			title: 'Sign In',
+			desc: 'Login into your Cyrcle Dashboard',
+			fields: [
+				{placeholder: 'Email'},
+				{placeholder: 'Password'}
+			],
+			btn: 'login',
+			btnClassList: 'form__btn',
+			link: true
+		} %}
+
+		{% include 'partials/components/_form.html' %}
+	</div>
+</div>
+<!-- end main -->
+
+{% endblock %}

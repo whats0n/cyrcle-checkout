@@ -1,0 +1,11 @@
+{% macro call(props) %}
+	<div class="choice-item">
+		<label class="choice-item__label">
+			<input type="checkbox" class="choice-item__input">
+			<span class="choice-item__switch">
+				<span class="choice-item__icon"></span>
+			</span>
+			<span class="choice-item__content">{{props.text}}</span>
+		</label>
+	</div>
+{% endmacro %}

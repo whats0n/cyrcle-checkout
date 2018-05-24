@@ -10,3 +10,9 @@ PageList:
 - file: checkout-referral.html
 - file: success-page.html
 - file: dashboard.html
+- file: reminder-notification.html
+- file: profile.html
+- file: login.html
+- file: create-password.html
+- file: change-plan.html
+- file: cc-info.html
